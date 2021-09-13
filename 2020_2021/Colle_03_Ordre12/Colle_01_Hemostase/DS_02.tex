@@ -1,0 +1,390 @@
+\documentclass[10pt,fleqn]{article} % Default font size and left-justified equations
+\usepackage[%
+    pdftitle={Modélisation systèmes multiphysiques : Modélisation linéaire et non linéaire},
+    pdfauthor={Xavier Pessoles}]{hyperref}
+    
+\input{style/new_style}
+\input{style/macros_SII}
+\usepackage{multicol}
+\usepackage{standalone}
+\standaloneconfig{mode=buildnew}
+\usepackage{siunitx}
+\usepackage{wrapfig}
+\fichetrue
+
+%\fichefalse
+
+\proftrue
+\proffalse
+
+\tdtrue
+%\tdfalse
+
+\courstrue
+\coursfalse
+
+\def\discipline{Sciences \\Industrielles de \\ l'Ingénieur}
+\def\xxtete{Sciences Industrielles de l'Ingénieur}
+
+\def\classe{MP}
+\def\xxnumpartie{\textsf{Cy. 1 à 3}}
+\def\xxpartie{Devoir Surveille 2}
+
+
+\def\xxnumchapitre{9 novembre 2018 \vspace{.2cm}}
+\def\xxchapitre{\hspace{.12cm}}%Modélisation multiphysique}
+
+
+\def\xxtitreexo{\noindent Automate d’exploration de l’hémostase \\  }%Motorisation du moteur Haibike}
+\def\xxsourceexo{\hspace{.2cm} CCP MP 2015}
+
+
+\def\xxposongletx{2}
+\def\xxposonglettext{1.45}
+\def\xxposonglety{20}
+%\def\xxonglet{Part. 1 -- Ch. 3}
+\def\xxonglet{\textsf{Cy. 1 à 3}}
+
+\def\xxactivite{Colle 2}
+\def\xxauteur{\textsl{Xavier Pessoles}}
+
+\def\xxcompetences{%
+\textsl{%
+%\textbf{Savoirs et compétences :}\\
+%Les sources sont associées par un \emph{hacheur série}. La détermination des grandeurs électriques associées à ce montage permet de conclure vis à vis du cahier des charges.
+%\noindent \textbf{Résoudre :} à partir des modèles retenus :
+%\begin{itemize}[label=\ding{112},font=\color{ocre}] 
+%\item choisir une méthode de résolution analytique, graphique, numérique;
+%\item mettre en \oe{}uvre une méthode de résolution.
+%\end{itemize}
+%\begin{itemize}[label=\ding{112},font=\color{ocre}] 
+%\item \textit{Rés -- C1.1 :} Loi entrée sortie géométrique et cinématique -- Fermeture géométrique.
+%\end{itemize}
+%
+%\noindent \textit{Mod2 -- C4.1 :} Représentation par schéma-blocs.
+}}
+
+\def\xxfigures{
+%\includegraphics[width=.4\linewidth]{images/ccmp_06}
+%\includegraphics[width=.4\linewidth]{images/ccs_00}
+}%figues de la page de garde
+
+
+\def\xxpied{%
+%Cycle 01 -- Modéliser le comportement des systèmes multiphysiques\\
+\xxactivite%
+}
+
+\setcounter{secnumdepth}{5}
+%---------------------------------------------------------------------------
+
+\usepackage{pgfplots}
+\begin{document}
+%\defimages{images}
+%\chapterimage{png/Fond_Cin}
+\input{style/new_pagegarde}
+\vspace{5cm}
+\pagestyle{fancy}
+\thispagestyle{plain}
+
+\def\columnseprulecolor{\color{ocre}}
+\setlength{\columnseprule}{0.4pt} 
+
+%\defimages2{images}
+
+\begin{multicols}{2}
+
+\subsection*{Présentation du système}
+
+
+%\begin{minipage}[c]{.6\linewidth}
+La société Stago est un laboratoire pharmaceutique de
+l'industrie du Diagnostic In Vitro (DIV) entièrement
+dédiée à l'exploration de l'hémostase et de la thrombose.
+L'hémostase est le processus physiologique qui permet
+d'interrompre le saignement pour éviter l'hémorragie.
+L’objet de cette étude, le STA Compact, est un
+automate de laboratoire destiné à l’analyse de
+l’hémostase.
+%\end{minipage} \hfill
+%\begin{minipage}[c]{.35\linewidth}
+\begin{center}
+\includegraphics[width=.8\linewidth]{images/ccp_01}
+\end{center}
+%\end{minipage} 
+
+%%Les figures suivantes situent le STA Compact dans son environnement et précisent ses fonctions.
+%%
+%%\begin{center}
+%%\includegraphics[width=.8\linewidth]{images/ccp_02}
+%%\end{center}
+%%
+%%\begin{center}
+%%\includegraphics[width=.8\linewidth]{images/ccp_03}
+%%\end{center}
+
+%Le STA Compact permet de réaliser, entre autre, des tests de chronométrie afin de mesurer un
+%temps de coagulation.
+%
+%Le principe du test de chronométrie est le suivant :
+%\begin{itemize}
+%\item une dose de réactif est mélangée à une dose de plasma sanguin précédemment étuvée dans
+%une cuvette contenant une bille ;
+%\item l’ensemble est chauffé alors que la bille est mise en oscillation dans le mélange par un
+%champ magnétique ;
+%\item on mesure l’amplitude de l’oscillation qui diminue sensiblement lors d’une variation de
+%viscosité du mélange sang-réactif ;
+%\item le temps écoulé jusqu’à la diminution des oscillations donne le temps de coagulation.
+%\end{itemize}
+
+\subsection*{Analyse de l’exigence 3.3 « Mettre la bille en oscillation »}
+\begin{obj}
+Déterminer la pulsation optimale des bobines motrices.
+\end{obj}
+
+\subsubsection*{Mise en situation}
+Le principe de la chronométrie consiste à mesurer la variation de l’amplitude d’oscillation d’une
+bille placée dans la cuvette de mesure.
+
+\begin{center}
+\includegraphics[width=\linewidth]{images/ccp_04}
+\end{center}
+
+La bille, roulant sans glisser sur le fond cylindrique de la cuvette, est mise en mouvement par un
+champ magnétique variable induit par deux bobines motrices placées de part et d’autre de la tête de
+mesure.
+
+%L’amplitude des oscillations est mesurée par deux autres bobines, l’une émettrice, l’autre réceptrice.
+%Après amplification du signal mesuré, on obtient un signal quasi-sinusoïdal, reflet de l’oscillation
+%de la bille. 
+À viscosité constante, on obtient un balancement pendulaire constant de la bille. Quand
+la viscosité augmente (phénomène de coagulation), l’amplitude d’oscillation de la bille varie.
+%Pour chaque mesure, le champ magnétique est ajusté en fonction de la viscosité initiale du milieu et
+%du type de test.
+
+
+
+
+La bille  est de masse $m$, de centre de masse $G$, de rayon $r$ et 
+roule sans glisser sur un rail circulaire de rayon $R$ dans
+le plan $\left( O, \vect{x_0}, \vect{y_0}\right)$. La position de la bille sur le rail est repérée par :
+$\theta=\left(\vect{z_0},\vect{z_1}\right)=\left(\vect{x_0},\vect{x_1}\right)$.
+
+$f$ est le coefficient d’adhérence au contact bille/cuvette : $f=0,1$. $J=\dfrac{2}{5}mr^2$ le moment d'inertie de la bille autour de l'axe $\axe{G}{{y_0}}$.
+
+
+
+L'équation du mouvement de la bille est donnée par :
+ $\dfrac{7}{5} m\left(R-r \right)\ddot{\theta} + f_v \left(R-r \right)\dot{\theta} + mg \sin \theta = F(t) \cos \theta$.% avec $\dot{\theta}(0)=0$ et ${\theta}(0)=0$.
+
+
+
+\begin{center}
+\includegraphics[width=.6\linewidth]{images/ccp_05}
+\end{center}
+
+
+
+\subsubsection*{Modélisation du mouvement de la bille}
+
+\subparagraph{}\textit{$\theta$ étant petit, linéariser l’équation du mouvement puis en déduire la fonction de transfert $H(p)=\dfrac{\theta(p)}{F(p)}$. Mettre $H(p)$) sous la forme canonique d’un système du second ordre dont on donnera les expressions du gain statique $K_S$, de la pulsation propre non amortie $\omega_0$ et du
+coefficient d’amortissement $\xi$ en fonction de $f_v$, $R$, $r$, $m$ et $g$.}
+
+\subparagraph{}\textit{On prendra les valeurs numériques suivantes pour cette question :
+$\omega_0 = \SI{21,8}{rad.s^{-1}}$; $K_S = \SI{25}{N^{-1}}$; $\xi=4f_v$.
+Tracer, le diagramme asymptotique de Bode en gain, ainsi que l’allure
+du diagramme réel pour les valeurs suivantes du coefficient de frottement visqueux $f_v$: $f_v=0,005$, $f_v=0,05$, $f_v=0,02$.}
+
+\subparagraph{}\textit{La sollicitation des bobines est sinusoïdale : $F(t)=F_0 \sin \left( \omega_{\text{bob}}t\right)$. Préciser, en
+justifiant votre réponse, la valeur à laquelle il faut régler la pulsation $\omega_{\text{bob}}$ pour pouvoir observer, au mieux, l’évolution du coefficient de frottement $f_v$.}
+
+\subparagraph{}\textit{Exprimer, pour un système du second ordre, en fonction de $\xi$, le rapport des amplitudes de sortie à $\omega \to 0$ et $\omega=\omega_0$ pour une même amplitude du signal d’entrée.}
+
+\subparagraph{}\textit{Les figures suivantes représentent, avec $f_v$ constant, l’évolution de la
+position de la bille $\theta$ (en degrés) en fonction du temps $t$ (en secondes)  pour différentes valeurs de pulsation $\omega_{\text{bob}}$. À partir de ces courbes et des résultats précédents, déterminer la valeur du coefficient d’amortissement $\xi$.}
+
+\begin{minipage}[c]{.48\linewidth}
+\begin{center}
+\includegraphics[width=\linewidth]{images/ccp_06}
+\textit{$\theta$ en fonction de $t$  pour $\omega_{\text{bob}}= 1$ et \SI{5}{rad.s^{-1}}}
+\end{center}
+
+\begin{center}
+\includegraphics[width=\linewidth]{images/ccp_07}
+\textit{$\theta$ en fonction de $t$  pour $\omega_{\text{bob}}= \SI{20}{rad.s^{-1}}$}
+\end{center}
+
+\end{minipage} \hfill
+\begin{minipage}[c]{.48\linewidth}
+\begin{center}
+\includegraphics[width=\linewidth]{images/ccp_08}
+\textit{$\theta$ en fonction de $t$  pour $\omega_{\text{bob}}= \SI{21,82}{rad.s^{-1}}$}
+\end{center}
+
+\begin{center}
+\includegraphics[width=\linewidth]{images/ccp_09}
+\textit{$\theta$ en fonction de $t$  pour $\omega_{\text{bob}}= \SI{24}{rad.s^{-1}}$}
+\end{center}
+
+\end{minipage} 
+
+
+\subparagraph{}\textit{En déduire la valeur numérique du coefficient de viscosité  $\eta$ du sang correspondant.}
+
+\subparagraph{}\textit{À partir de ces analyses, en justifiant votre réponse, donner l’allure de la courbe $\theta$ en fonction de $t$ obtenue à la pulsation $\omega_0$ lorsque la viscosité du sang varie au fur et à mesure de la coagulation (si l’on suppose que $f_v$ augmente avec la coagulation).}
+
+\subsection*{Analyse de l’exigence 2.3 << Prélever les produits par déplacement suivant  $\vec{z}$ de la tête de pipetage >>}% de la tête de pipetage >>}% << Prélever les produits par le
+%déplacement suivant $\vect{z}$ de la tête de pipetage >>}
+\begin{obj}
+Régler la commande du moteur afin de respecter le cahier des charges.
+\end{obj}
+
+\subsubsection*{Présentation}
+Les aiguilles de prélèvement des doses de plasma et de réactifs sont reliées à la tête de pipetage.
+Elles peuvent avoir un mouvement de translation verticale (selon la direction $\vect{z}$) par rapport à cette
+tête. Deux types de réactifs sont utilisés. La tête de pipetage possède donc trois aiguilles : une pour
+le sang et une par type de réactif.
+
+Successivement, pour chaque produit (plasma puis réactifs), la tête de pipetage est positionnée au dessus
+du flacon approprié, l’aiguille correspondante prélève la quantité nécessaire, puis l’ensemble
+tête de pipetage/aiguilles vient déposer le produit dans la cuvette d’analyse. Les aiguilles sont
+ensuite plongées dans un flacon de nettoyage. L’aspiration et le refoulement des liquides (plasma et
+réactifs) se font à l’aide d’une même seringue de pipetage motorisée (non représentée).
+
+\begin{center}
+\includegraphics[width=\linewidth]{images/ccp_13}
+\end{center}
+
+\subsubsection*{Modélisation de la motorisation}
+
+Les déplacements verticaux des aiguilles de la tête de pipetage (axe $\vect{z}$) sont assurés par un ensemble motoréducteur à courant continu et système pignon-crémaillère.
+On note :
+\begin{itemize}
+\item $ \theta_m(t)$ et $\omega_m(t)$ l’angle et la vitesse angulaire du moteur ;
+\item $\omega_r(t)$ la vitesse angulaire en sortie de réducteur ;
+\item $k_r=\dfrac{\omega_r}{\omega_m}=\dfrac{1}{19,2}$ le rapport de réduction du réducteur ;
+\item $c_m(t)$ le couple moteur ;
+\item $J_m$ l’inertie du moteur et $J_r$ l'inertie du réducteur ramenée à l’arbre moteur ;
+\item $m_p = \SI{0,2}{kg}$ la masse en translation ;
+\item $F_r(t) = \SI{1}{N}$ l’effort de l’opercule sur l’aiguille ;
+\item $c_{\text{res}}$ couple résistant ramené à l’arbre moteur modélisant l’ensemble des frottements, y compris les frottements internes au réducteur ($c_{\text{res}}\leq 0$) ;
+\item $R_p = \SI{10}{mm}$ le rayon du pignon du système pignon crémaillère ;
+\item $\omega_{mn} = \SI{4 150}{tr.min^{-1}}$ la vitesse de rotation nominale du moteur ;
+\item $c_{mn}= \SI{5e-3}{Nm}$ le couple moteur nominal ;
+\item $E_c\left(S/Rg\right)$ l’énergie cinétique de l’ensemble $S$ par rapport au référentiel $R_g$.
+\end{itemize}
+
+L'inertie équivalente ramenée à l'arbre moteur est donnée par $J_{\text{eq}}=J_m+J_r+m_p\left(r_p k_r \right)^2$. On établit que $c_m(t)=c_r(t)+J_{\text{eq}}\dot{\omega}_m(t) \quad (4)$ avec $c_r(t)=mgR_p k_r + F_R R_pk_r - C_{\text{res}}$.
+
+
+
+La tête de pipetage est asservie en position. Le schéma-bloc de cet asservissement est ébauché sur le
+document réponse. Un codeur mesure l’angle de rotation moteur et un hacheur
+module la tension aux bornes du moteur.
+On note :
+\begin{itemize}
+\item $u(t)$ la tension aux bornes du moteur, $i(t)$ l’intensité, $e(t)$ la force électromotrice ;
+\item $R$ la résistance de l’induit, $L$ son inductance, $K$ la constante de force électromotrice ;
+\item $K_{\text{cod}} = \SI{2 000}{points/tr}$ le gain du codeur tel que $m_{\theta}(t) = K_{\text{cod}}\theta_m(t)$;
+\item $K_\text{adap}$ le gain permettant d’adapter la consigne $z_c(t)$ à l’image de la position $m_{\theta}(t)$;
+\item $H_{\text{cor}}(p)$ la fonction de transfert du correcteur ;
+\item $K_h =\SI{0,094}{V.point^{-1}}$ le gain du hacheur.
+\end{itemize}
+Les équations du moteur à courant continu sont les suivantes :
+$u(t) =Ri(t) + L\dfrac{\dd i(t)}{\dd t}+e(t) \quad (5)$, $e(t)=K\omega_m(t) \quad (6)$, $ c_m(t)=Ki(t)  \quad (7) $.
+
+\subparagraph{}\textit{En tenant compte des notations précédentes, compléter sous forme littérale,
+sur le document réponse***, le schéma-blocs de l’asservissement en position.}
+
+
+
+
+\subparagraph{}\textit{Déterminer l’expression de $K_{\text{adap}}$ pour que l’écart calculé $\varepsilon$  soit proportionnel à l’erreur $z_c(t)-z(t)$.}
+
+On note :
+\begin{itemize}
+\item $i_0$ l’intensité initiale ;
+\item $i_{\infty}$ et $\omega_{\infty}$ l’intensité et la vitesse du moteur en régime permanent ;
+\item $c_{r0}$ le couple résistant $c_{r}(t)$ supposé constant.
+\end{itemize}
+
+\subparagraph{\label{26}}\textit{Déterminer les expressions de $\left(\dfrac{\Omega_m(p)}{U(p)}\right)_{c_{r0}=0}$ et de $\left(\dfrac{I(p)}{U(p)}\right)_{c_{r0}=0}$. Mettre celles-ci
+sous forme canonique.}
+
+Afin de déterminer les caractéristiques du moteur, on applique à celui-ci un échelon de tension
+($u_0(t)$) d’amplitude \SI{24}{V}. On mesure la vitesse $\omega_m(t)$ et l’intensité $i(t)$. Les résultats obtenus sont donnés sur le document réponse ********.
+
+\subparagraph{}\textit{À partir de ces courbes et des résultats de la question \ref{26}, indiquer si l’hypothèse d’une inductance négligeable est pertinente. Justifier la réponse.}
+
+\subparagraph{}\textit{Dans cette hypothèse d’une inductance négligeable et à partir des équations (4), (5), (6) et (7), déterminer les expressions de $i_0$, $i_{\infty}$ et $\omega_{\infty}$ en fonction de $u_0$, $c_{r0}$, $R$ et $K$.}
+
+\subparagraph{}\textit{Déduire de cette étude les valeurs numériques de $K$ et $R$.}
+
+\subparagraph{}\textit{Déterminer la valeur numérique du couple résistant ramené à l’arbre moteur $c_{r0}$ et de l’inertie équivalente ramenée à l’arbre moteur $J_{\text{eq}}$.}
+
+
+\subsubsection*{Réglage de l’asservissement}
+Les résultats précédents ont permis de modéliser l’asservissement de position par le schéma-blocs ci-dessous:
+
+\begin{center}
+\includegraphics[width=\linewidth]{images/ccp_11}
+\end{center}
+
+avec $K_2 = \SI{2,78e-2}{N^{-1}}$, $K_1  = \SI{856}{s^{-1}}$, $T_m=\SI{3e-2}{s}$. Le couple résistant $C_r$ est constant et vaut $C_{r0} = \SI{2,7e-3}{Nm}$.
+On suppose le correcteur proportionnel : $H_{\text{cor}}(p)=K_P$.
+
+On donne le diagramme partiel des exigences.
+
+\begin{center}
+\includegraphics[width=\linewidth]{images/ccp_14}
+\end{center}
+
+
+
+\subparagraph{}\textit{Déterminer l’expression de la fonction de transfert en boucle ouverte $H_{\text{bo}}(p)=\dfrac{Z(p)}{\varepsilon(p)}$ ainsi que la fonction de transfert  $H_{cr}(p)=
+\left(\dfrac{Z(p)}{C_r(p)}\right)_{Z_c=0}$.}
+
+
+\subparagraph{}\textit{Déterminer l’erreur statique pour une entrée de type échelon d’amplitude $Z_{c0}$ dans l’hypothèse d’une perturbation nulle ($C_{r0}=0$). Déterminer ensuite l’erreur due à une
+perturbation constante $C_{r0}$, définie comme la valeur finale de la position $z(t)$ dans le cas d’une
+consigne de position nulle $z_c= 0$. En déduire la valeur de $K_P$ pour satisfaire le critère de
+précision du cahier des charges.}
+
+\subparagraph{}\textit{Les diagrammes de Bode en gain et en phase de $H_{bo}(p)$ sont donnés sur le document réponse pour $K_P=1$. Pour la valeur de $K_P$ déterminée précédemment, indiquer si le critère de stabilité est satisfait en justifiant votre démarche par les tracés nécessaires sur le document
+réponse.}
+
+Afin d’améliorer le comportement, on implante un correcteur Proportionnel Intégral ayant pour
+fonction de transfert : $H_{\text{cor}}(p)=\dfrac{K_P\left(1+T_i p\right)}{T_i p}$ avec $K_p=1$ et $T_i=\SI{1}{s}$.
+Les diagrammes de Bode de la fonction de transfert en boucle ouverte avec ce correcteur sont
+donnés sur le document réponse.
+On souhaite une marge de phase d’au moins 60\degres.
+
+
+\subparagraph{}\textit{Justifier le choix de ce correcteur. Déterminer le coefficient $K_p$ pour satisfaire au cahier des charges. Justifier vos calculs par les tracés nécessaires sur le document réponse.}%****}
+
+\subparagraph{}\textit{La figure suivante donne la réponse à un échelon de position de \SI{50}{mm} avec le correcteur précédemment réglé. Vérifier qu’elle est conforme au cahier des charges. Justifier clairement vos réponses en donnant les valeurs numériques pour chaque critère.}
+
+
+\begin{center}
+\includegraphics[width=\linewidth]{images/ccp_12}
+\end{center}
+
+\end{multicols}
+
+\end{document}
+
+
+\begin{obj}
+\end{obj}
+
+\begin{center}
+\includegraphics[width=.8\linewidth]{images/e3a_06.png}
+\end{center}
+
+\subparagraph{}
+\textit{}
+\ifprof
+\begin{corrige}
+\end{corrige}
+\else
+\fi

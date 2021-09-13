@@ -1,0 +1,268 @@
+\documentclass[10pt,fleqn]{article} % Default font size and left-justified equations
+\usepackage[%
+    pdftitle={Modélisation dynamique},
+    pdfauthor={Xavier Pessoles}]{hyperref}
+
+    
+\input{style/new_style}
+\input{style/macros_SII}
+\usepackage{multicol}
+\usepackage{siunitx}
+%\usepackage{picins}
+\fichetrue
+ %\fichefalse
+
+\proftrue
+\proffalse
+
+\tdtrue
+%\tdfalse
+
+\courstrue
+\coursfalse
+
+
+\def\classe{\textsf{PSI$\star$ -- MP}}
+\def\xxnumpartie{Cycle 06}
+\def\xxpartie{Modéliser le comportement des systèmes mécaniques dans le but d'établir une loi de comportement ou de déterminer des actions mécaniques en utilisant les méthodes énergétiques}
+
+\def\xxnumchapitre{Chapitre 1 \vspace{.2cm}}
+\def\xxchapitre{\hspace{.12cm} Approche énergétique}
+
+\def\discipline{Sciences \\Industrielles de \\ l'Ingénieur}
+\def\xxtete{Sciences Industrielles de l'Ingénieur}
+
+
+
+
+\def\xxtitreexo{Révisions -- Rapports de transmission}%Motorisation du moteur Haibike}
+\def\xxsourceexo{%\hspace{.2cm} \footnotesize{Émilien Durif -- E3A PSI 2011}
+}
+
+
+\def\xxposongletx{2}
+\def\xxposonglettext{1.45}
+\def\xxposonglety{20}
+%\def\xxonglet{Part. 1 -- Ch. 3}
+\def\xxonglet{Cycle 06}
+
+\def\xxactivite{Application}
+\def\xxauteur{\textsl{X. Pessoles}}
+
+\def\xxcompetences{%
+\textsl{%
+\textbf{Savoirs et compétences :}\\
+%Les sources sont associées par un \emph{hacheur série}. La détermination des grandeurs électriques associées à ce montage permet de conclure vis à vis du cahier des charges.
+%\noindent \textbf{Résoudre :} à partir des modèles retenus :
+%\begin{itemize}[label=\ding{112},font=\color{ocre}] 
+%\item choisir une méthode de résolution analytique, graphique, numérique;
+%\item mettre en \oe{}uvre une méthode de résolution.
+%\end{itemize}
+%\begin{itemize}[label=\ding{112},font=\color{ocre}] 
+%\item \textit{Rés -- C1.1 :} Loi entrée sortie géométrique et cinématique -- Fermeture géométrique.
+%\end{itemize}
+%
+%\noindent \textit{Mod2 -- C4.1 :} Représentation par schéma bloc.
+}}
+
+\def\xxfigures{
+%\includegraphics[width=.7\linewidth]{images/axe_y_photo}
+}%figues de la page de garde
+
+
+\def\xxpied{%
+Cycle 06 -- Modélisation mécanique -- Énergétique\\% afin de valider leurs performances.\\
+Chapitre 1 -- \xxactivite%
+}
+
+\setcounter{secnumdepth}{5}
+%---------------------------------------------------------------------------
+
+\usepackage{pgfplots}
+\begin{document}
+\def\pathfig{images}
+%\chapterimage{png/Fond_Cin}
+\input{style/new_pagegarde}
+\vspace{4.5cm}
+\pagestyle{fancy}
+\thispagestyle{plain}
+
+\def\columnseprulecolor{\color{ocre}}
+\setlength{\columnseprule}{0.4pt} 
+
+\def\pathfig{images}
+
+\ifprof
+%\begin{multicols}{2}
+\else
+\begin{multicols}{2}
+\fi
+
+\section*{Train épicycloïdal -- Type 1 -- Sécateur Pellenc}
+\setcounter{exo}{0}
+\textit{D'après ressources de Florestan Mathurin.}
+
+\begin{obj}~\\
+Vérifier les performances d'un réducteur.
+\end{obj}
+
+%
+%La période de taille de la vigne dure 2 mois environ. Les viticulteurs coupent 9 à 10 heures par jour. Ils répètent donc le même geste des millions de fois avec un sécateur. Les sociétés réalisant le du matériel agricole ont imaginé un sécateur électrique capable de réduire la fatigue de la main et du bras tout en laissant au viticulteur la commande de la coupe et sa liberté de mouvement. Le sécateur développé par la société Pellenc permet notamment de réaliser 60 coupes de diamètre 22 mm par minute. L’ensemble sécateur Pellenc est constitué d’un sécateur électronique, d’une mallette source d’énergie, d’une sacoche avec harnais et ceinture et d’un chargeur de batterie.
+%
+%%
+%%\begin{center}
+%% \includegraphics[width=.95\linewidth]{images/secateur1}
+%%\end{center}
+%
+%
+%Lorsque l’utilisateur appuie sur la gâchette, le moteur transmet par l’intermédiaire d’un réducteur à train épicycloïdal un mouvement de rotation à la vis à billes. L’écrou se déplace en translation par rapport à la vis et par l’intermédiaire d’une biellette met en rotation la lame mobile générant ainsi le mouvement de coupe. 
+
+\begin{center}
+ \includegraphics[width=.95\linewidth]{images/secateur2}
+\end{center}
+
+
+
+
+Le moteur tourne à la vitesse de rotation $N_1=1\,400\;\text{tr/min}$ le (le rotor est lié au planétaire 1). La vis à billes liée au porte-satellite 4 tourne à la vitesse de rotation $N_4=350^; \text{tr/min}$. On note $Z_1$ le nombre dents du planétaire 1, $Z_2$ celui du satellite 2 et $Z_3$ celui de la couronne liée au bâti.
+
+\begin{center}
+ \includegraphics[width=.6\linewidth]{images/secateur3}
+\end{center}
+
+
+
+\subparagraph{}
+\textit{Déterminer alors le rapport de réduction du train épicycloïdal $\omega(4/0)/\omega(1/0)$ en fonction de $Z_1$ et $Z_3$.}
+ \ifprof
+ \begin{corrige}
+ \end{corrige}
+ \else
+ \fi
+ 
+\subparagraph{}
+\textit{Faire l’application numérique et déterminer une relation entre $Z_1$ et $Z_3$. Sachant que $Z_1=19$ en déduire $Z_3$.}
+ \ifprof
+ \begin{corrige}
+ \end{corrige}
+ \else
+ \fi
+ 
+\subparagraph{}
+\textit{Sachant que les roues dentées du train ont les mêmes modules, déterminer une relation géométrique entre les diamètres des éléments dentés $d_1$, $d_2$, $d_3$ puis en déduire une relation entre $Z_2$, $Z_1$, $Z_3$ (condition d’entraxe). Calculer la valeur de $Z_2$.}
+
+ \ifprof
+ \begin{corrige}
+ \end{corrige}
+ \else
+ \fi
+
+\newpage
+\section*{Soupape}
+
+
+%\subsection*{Commande de soupape}
+\setcounter{exo}{0}
+
+%\begin{minipage}[c]{.5\linewidth}
+
+Le dessin ci-dessous représente la commande d'ouverture d'une soupape montée sur une moto HONDA 125 CG.
+
+Un dessin simplifié de cette commande est donné sur le document format A3.
+
+Elle comprend :
+\begin{itemize}
+\item un bâti \textbf{0} considéré comme fixe;
+\item une came \textbf{1} tournant à $250\; rad/s$ autour d'un point fixe $A$;
+\item un linguet \textbf{2} ayant un mouvement de rotation autour d'un point fixe $B$;
+\item une tige de culbuteur \textbf{3} transmettant le mouvement à la partie haute du cylindre;
+\item un culbuteur \textbf{4} destiné à inverser le sens du mouvement. Le culbuteur \textbf{4} tourne autour d'un point fixe $C$;
+\item une soupape \textbf{5}.
+\end{itemize}
+
+Le dessin est représenté à l'échelle \textbf{1,5 : 1}. On veut calculer, pour la configuration donnée, la vitesse de déplacement de la soupape.
+
+%\end{minipage}\hfill
+%\begin{minipage}[c]{.48\linewidth}
+
+%\end{minipage}
+
+\subparagraph{}
+\textit{Calculer la norme $\vectv{I}{1}{0}$ en $mm/s$.}
+
+\subparagraph{}
+\textit{Dessiner la sur le document A3 en adoptant l'échelle : $20\; mm/s \leftrightarrow 1 mm$ .}
+
+\subparagraph{}
+\textit{En justifiant vos résultats, trouver graphiquement les vitesses suivantes : $\vectv{J}{5}{0}$.}
+%\\
+%\begin{minipage}[c]{.22\linewidth}
+%\begin{itemize}
+%\item [$\bullet$] $\vectv{I}{1}{0}$;
+%\item [$\bullet$] $\vectv{I}{2}{0}$;
+%\end{itemize}
+%\end{minipage}\hfill
+%\begin{minipage}[c]{.22\linewidth}
+%\begin{itemize}
+%\item [$\bullet$] $\vectv{D}{2}{0}$;
+%\item [$\bullet$] $\vectv{D}{3}{0}$;
+%\end{itemize}
+%\end{minipage}\hfill
+%\begin{minipage}[c]{.22\linewidth}
+%\begin{itemize}
+%\item [$\bullet$] $\vectv{E}{3}{0}$;
+%\item [$\bullet$] $\vectv{E}{4}{0}$;
+%\end{itemize}
+%\end{minipage}
+%\hfill
+%\begin{minipage}[c]{.22\linewidth}
+%\begin{itemize}
+%\item [$\bullet$] $\vectv{J}{4}{0}$;
+%\item [$\bullet$] $\vectv{J}{5}{0}$.
+%\end{itemize}
+%\end{minipage}}
+
+\subparagraph{}
+\textit{Expliquer en dessinant à main levée un croquis du mécanisme à échelle réduite comment trouver le centre instantané de rotation du mouvement 3/0.}
+
+\subparagraph{}
+\textit{Situer approximativement la position de ce CIR.}
+
+\begin{center}
+\includegraphics[width=.8\linewidth]{images/soupape_1}
+\end{center}
+
+
+
+%%\subsection*{Commande de soupape}
+%\setcounter{exo}{0}
+%
+%
+%\section*{Liaison encastrement démontable}
+%\setcounter{exo}{0}
+%
+%\subparagraph{}
+%\textit{Détailler l'architecture de la liaison encastrement démontable de votre choix..}
+
+
+\end{multicols}
+%\begin{center}
+%\includegraphics[width=.75\linewidth]{Dessin_01}
+%\end{center}
+\newpage
+\begin{center}
+\includegraphics[width=\linewidth]{images/soupape_A3}
+\end{center}
+
+\end{document}
+
+\subparagraph{}
+\textit{}
+
+\ifprof
+\begin{corrige}
+\end{corrige}
+\else
+\fi
+
+	

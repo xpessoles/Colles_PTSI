@@ -1,0 +1,159 @@
+%%%% Paramétrage du TD %%%%
+\def\xxactivite{Colle \ifprof -- Corrigé \else \fi} % \normalsize \vspace{-.4cm}
+\def\xxauteur{\textsl{Xavier Pessoles}}
+
+
+\def\xxnumchapitre{Chapitre 1 \vspace{.2cm}}
+\def\xxchapitre{\hspace{.12cm} }
+
+
+\def\xxcompetences{%
+\vspace{-.3cm}
+\textsl{%
+\textbf{Savoirs et compétences :}\\
+\vspace{-.4cm}
+%\begin{itemize}[label=\ding{112},font=\color{ocre}] 
+%%\item \textit{Res1.C4 : } Correction
+% \item \textit{Res1.C4.SF1 : } Proposer la démarche de réglage d’un correcteur proportionnel
+%%proportionnel intégral 
+%%et à avance de phase
+%\item \textit{Con.C2 : } 	Correction d’un système asservi	
+%\item \textit{Con.C2.SF1 : } Choisir un type de correcteur adapté
+%\end{itemize}
+}}
+
+\def\xxauteur{\textsl{Xavier Pessoles}}
+
+\def\xxtitreexo{Pompe hydraulique de bateau\ifnormal $\star$ \else \fi \iftdifficile $\star\star\star$ \else \fi }
+\def\xxsourceexo{\hspace{.2cm} \footnotesize{}}
+
+\def\xxfigures{
+\includegraphics[width=.6\linewidth]{images/fig_01}
+}%figues de la page de garde
+
+
+\iflivret
+\input{../../style/new_pagegarde}
+\else
+\input{../../style/new_pagegarde}
+\fi
+\setlength{\columnseprule}{.1pt}
+
+\pagestyle{fancy}
+\thispagestyle{plain}
+
+\vspace{4.5cm}
+
+\def\columnseprulecolor{\color{ocre}}
+\setlength{\columnseprule}{0.4pt} 
+
+\setcounter{exo}{0}
+
+\ifprof
+\begin{multicols}{2}
+\else
+\begin{multicols}{2}
+\fi
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%\section{Système mobile d’imagerie interventionnelle Discovery IGS 730}
+\subsection*{Fonctionnement}
+
+Le dessin d'ensemble (voir le document format A4 à l’échelle 0,8 présent sur les documents-réponses) et la nomenclature fournie ci-après représente la pompe d'une barre à roue hydraulique installée sur un bateau de plaisance. La photo en en-tête du sujet représente une pompe similaire (à peu près identique) telle qu'on peut la trouver sur un catalogue de vente d'accessoires nautiques.
+
+
+Cette pompe est reliée, par deux canalisations, à un vérin à double effet avec contre tige. La tige du vérin est reliée mécaniquement à la mèche (l’axe) du gouvernail (voir schéma d'implantation ci-après page 2).
+
+La rotation de la barre à roue, dans un sens ou dans l'autre, provoque la sortie ou la rentrée de la tige du vérin, ce qui a pour effet de modifier l'orientation du safran (gouvernail) par rapport à l'axe du navire; par conséquent cela entraîne le virement du bateau dans la direction désirée.Il n’y pas de moteur électrique : c’est la rotation de la barre, grâce à l’action du barreur, qui seule fournit de l’énergie.
+
+Le mécanisme étant réversible, deux clapets anti-retour pilotés (non représentés) sont intégrés dans le circuit hydraulique.
+
+
+\subsection*{Description de la pompe}
+
+\begin{center}
+\includegraphics[width=\linewidth]{images/fig_02}
+\end{center}
+
+II s'agit d'une pompe à pistons axiaux, à cylindrée fixe.
+
+Les pistons 4 s'appuient sur la rondelle de la butée 8 ; l'axe de cette butée étant incliné par rapport à l'axe de rotation du barillet  2.
+
+Lors de la rotation du barillet 2 les pistons 4 sont animés, par rapport au barillet 2 d'un mouvement rectiligne alternatif. 
+
+Si un piston se déplace suivant $\vect{i}$ (voir la coupe A-A) alors le cylindre correspondant est en phase d'Aspiration.
+
+Si ce même piston se déplace suivant ($-\vect{i}$) alors le cylindre correspondant est en phase de Refoulement et le fluide hydraulique ainsi évacué alimente le récepteur.
+
+Le corps de la pompe fait office de réservoir ; le fluide hydraulique assure la lubrification du mécanisme.
+
+
+\subsection*{Travail à réaliser}
+\subsection*{Analyse}
+\subparagraph{}\textit{Définir la liaison entre le piston 4 et le barillet 2.}
+
+\subparagraph{}\textit{Définir la liaison entre le piston 4 et la rondelle de la butée 8.}
+
+\subparagraph{}\textit{Quelle est la fonction des ressorts 5 ?}
+
+\subparagraph{}\textit{Dans la situation la plus défavorable, cas du piston apparent dans la coupe A-A, quel doit être l’état du ressort correspondant ?}
+
+
+
+
+\subsection*{Fonctionnement de la barre à roue}
+
+Les croquis 1 et 2 du document réponse 1 représentent :
+\begin{itemize}
+\item le safran
+\item le vérin double effet à contre-tige
+\item le distributeur 3 et le barillet 2 de la pompe
+\item les canalisations reliant le distributeur 3 au vérin.
+\end{itemize}
+
+Au croquis 1 correspond le virement à tribord (vers la droite) du bateau (le safran tournant dans le sens trigonométrique autour de l’axe de la mèche).
+
+Au croquis 2 correspond le virement à bâbord (vers la gauche) du bateau (le safran tournant dans le sens horaire autour de l’axe de la mèche).
+
+
+
+\subparagraph{}\textit{Pour chacun des deux cas de fonctionnement, représenter dans la partie adéquate du circuit hydraulique,
+\begin{itemize}
+\item en rouge le fluide hydraulique moteur, c’est à dire au refoulement par rapport à la pompe
+\item en bleu le fluide hydraulique passif, c’est à dire l’aspiration par rapport à la pompe. 
+\end{itemize}}
+
+\subparagraph{}\textit{Représenter, dans chaque zone, le sens de circulation du fluide hydraulique par des flèches.}
+
+\subparagraph{}\textit{Indiquer dans les deux cas le sens de rotation du barillet, donc de la barre à roue.}
+
+\subsection*{Schéma cinématique}
+\subparagraph{}\textit{Mettre en place sur le dessin d’ensemble les sous-ensembles cinématiques par coloriage.}
+
+\subparagraph{}\textit{Faire un graphe de structure.}
+
+\subparagraph{}\textit{Faire le schéma cinématique (le ressort 5 ne sera pas représenté).}
+
+La pièce 3 ayant une forme un délicate à appréhender le dessin de définition de cette pièce est donné ci-dessous.
+
+\begin{center}
+\includegraphics[width=\linewidth]{images/fig_03}
+\end{center}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ifprof
+\end{multicols}
+\else
+\end{multicols}
+\fi
+
+
+
+\begin{center}
+\includegraphics[width=\linewidth]{images/fig_04}
+\end{center}

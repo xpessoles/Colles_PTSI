@@ -1,0 +1,147 @@
+%%%% Paramétrage du TD %%%%
+\def\xxactivite{Colle \ifprof -- Corrigé \else \fi} % \normalsize \vspace{-.4cm}
+\def\xxauteur{\textsl{Xavier Pessoles}}
+
+
+\def\xxnumchapitre{Chapitre 1 \vspace{.2cm}}
+\def\xxchapitre{\hspace{.12cm} }
+
+
+\def\xxcompetences{%
+\vspace{-.3cm}
+\textsl{%
+\textbf{Savoirs et compétences :}\\
+\vspace{-.4cm}
+%\begin{itemize}[label=\ding{112},font=\color{ocre}] 
+%%\item \textit{Res1.C4 : } Correction
+% \item \textit{Res1.C4.SF1 : } Proposer la démarche de réglage d’un correcteur proportionnel
+%%proportionnel intégral 
+%%et à avance de phase
+%\item \textit{Con.C2 : } 	Correction d’un système asservi	
+%\item \textit{Con.C2.SF1 : } Choisir un type de correcteur adapté
+%\end{itemize}
+}}
+
+\def\xxauteur{\textsl{Xavier Pessoles}}
+
+\def\xxtitreexo{Pompe hydraulique manuelle\ifnormal $\star$ \else \fi \iftdifficile $\star\star\star$ \else \fi }
+\def\xxsourceexo{\hspace{.2cm} \footnotesize{}}
+
+\def\xxfigures{
+%\includegraphics[width=.6\linewidth]{images/ccp_00}
+}%figues de la page de garde
+
+
+\iflivret
+\input{../../style/new_pagegarde}
+\else
+\input{../../style/new_pagegarde}
+\fi
+\setlength{\columnseprule}{.1pt}
+
+\pagestyle{fancy}
+\thispagestyle{plain}
+
+\vspace{4.5cm}
+
+\def\columnseprulecolor{\color{ocre}}
+\setlength{\columnseprule}{0.4pt} 
+
+\setcounter{exo}{0}
+
+\ifprof
+\begin{multicols}{2}
+\else
+\begin{multicols}{2}
+\fi
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%\section{Système mobile d’imagerie interventionnelle Discovery IGS 730}
+\subsection*{Fonctionnement}
+
+Le plan joint format A4 représente l’ensemble monté d’une pompe hydraulique manuelle.
+
+La pompe est fixée sur un support vertical au moyen de 3 trous filetés (1). Une série de trois trous filetés est usinée sur chaque coté du corps (2), permettant ainsi de fixer indifféremment la pompe sur l’une ou l’autre de ses faces.
+
+L’admission de l’huile est effectuée par l’orifice (3), le refoulement par l’orifice (4).
+
+Le pompage s’effectue en actionnant un levier placé dans l’alésage cannelé du maneton (5). Le mouvement alternatif est, par l’intermédiaire de la biellette articulée, transmis au piston coulissant (6).
+
+Lors du mouvement de droite à gauche du piston coulissant, un volume d’huile est aspiré à travers (3) et vient s’emmagasiner dans l’alésage à droite de la tête du piston, simultanément l’huile qui se trouve à gauche de la tête du piston est refoulée par l’orifice (4).
+
+Lors du mouvement de gauche à droite du piston coulissant s’effectue le transfert, à travers de la tête du piston, de l’huile emmagasinée à sa droite (celle-ci passant côté tige). Simultanément une partie de l’huile transférée est refoulée dans (4).
+
+Un clapet anti-retour est constitué d’une bille et d’un ressort. Sur la pompe étudiée ils sont au nombre de trois. 
+Le passage du fluide dans un sens, par action sur la bille provoque l’écrasement du ressort et libère le passage. 
+Dans le sens contraire l’action du fluide se conjugue avec celle du ressort et interdit le passage. 
+
+
+
+\subparagraph{}
+\textit{Le diamètre nominal de la bille contenue dans le clapet anti-retour situé sur l’orifice (4) est identique à celui de l’alésage qui la guide. Est-ce fonctionnellement correct ? Justifier votre réponse. L’observation de la pièce (7) du clapet situé sur l’orifice (3) peut vous aider pour la réponse.}
+
+\subparagraph{}
+\textit{L’alésage du corps contenant l’extrémité du raccord orifice (4) et l’alésage sur lequel le piston (6) coulisse doivent-ils être réalisés avec le même type d’état de surface ? Justifier votre réponse.}
+
+\subparagraph{}
+\textit{Entre la tige du piston et l’alésage du corps, quel ajustement choisir ? Préciser s’il s’agit d’un ajustement avec jeu, avec serrage ou ajusté.}
+
+\subparagraph{}
+\textit{D’après la représentation du dessin d’ensemble, un des composants de la pompe ne peut pas être monté. Quel est-il (donner son numéro) ? Pourquoi ? Que faudrait-il faire pour le rendre montable ?}
+
+\subparagraph{}
+\textit{Dans le mouvement de droite à gauche du piston, le volume aspiré dans (3) à droite de la tête de piston est-il le même que celui refoulé à gauche de la tête de piston dans (4) ? Justifier votre réponse.}
+
+On donne les dimensions suivantes :
+\begin{itemize}
+\item tête de piston = \SI{29}{mm};
+\item tige de piston = \SI{18}{mm};
+\item course du piston = \SI{31}{mm}.
+\end{itemize}
+
+\subparagraph{}
+\textit{Quel est le volume d’huile  envoyé à la sortie (4) :
+\begin{itemize}
+\item lors de la course droite -- gauche du piston ?
+\item lors de la course gauche -- droite du piston ?
+\end{itemize}}
+
+
+
+\subsection*{Schéma cinématique}
+On considère la pompe sans aucun clapet. Seule la transformation de mouvement permettant le déplacement du piston nous intéresse.
+
+\subparagraph{}
+\textit{Faire le schéma cinématique de la pompe.}
+
+\subsection*{Travail graphique}
+Le corps (2) est représenté en image de synthèse sous plusieurs angles.
+
+
+\begin{center}
+\includegraphics[width=\linewidth]{images/fig_01}
+\end{center}
+
+\subparagraph{}
+\textit{Compléter le dessin du corps (2) sur le document pré-imprimé.}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ifprof
+\end{multicols}
+\else
+\end{multicols}
+\fi
+
+\begin{center}
+\includegraphics[height=\textheight]{images/fig_02}
+\end{center}
+
+\begin{center}
+\includegraphics[width=\linewidth]{images/fig_03}
+\end{center}

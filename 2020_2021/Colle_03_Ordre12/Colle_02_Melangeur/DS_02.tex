@@ -1,0 +1,321 @@
+\documentclass[10pt,fleqn]{article} % Default font size and left-justified equations
+\usepackage[%
+    pdftitle={Modélisation systèmes multiphysiques : Modélisation linéaire et non linéaire},
+    pdfauthor={Xavier Pessoles}]{hyperref}
+    
+\input{style/new_style}
+\input{style/macros_SII}
+\usepackage{multicol}
+\usepackage{standalone}
+\standaloneconfig{mode=buildnew}
+\usepackage{siunitx}
+\usepackage{wrapfig}
+\fichetrue
+
+%\fichefalse
+
+\proftrue
+\proffalse
+
+\tdtrue
+%\tdfalse
+
+\courstrue
+\coursfalse
+
+\def\discipline{Sciences \\Industrielles de \\ l'Ingénieur}
+\def\xxtete{Sciences Industrielles de l'Ingénieur}
+
+\def\classe{MP}
+\def\xxnumpartie{\textsf{Cy. 1 à 3}}
+\def\xxpartie{Devoir Surveille 2}
+
+
+\def\xxnumchapitre{9 novembre 2018 \vspace{.2cm}}
+\def\xxchapitre{\hspace{.12cm}}%Modélisation multiphysique}
+
+
+\def\xxtitreexo{\noindent Mélangeur interne à rotors engrenant }%Motorisation du moteur Haibike}
+\def\xxsourceexo{\hspace{.2cm} E3A PSI 2013}
+
+
+\def\xxposongletx{2}
+\def\xxposonglettext{1.45}
+\def\xxposonglety{20}
+%\def\xxonglet{Part. 1 -- Ch. 3}
+\def\xxonglet{\textsf{Cy. 1 à 3}}
+
+\def\xxactivite{Colle 2}
+\def\xxauteur{\textsl{Xavier Pessoles}}
+
+\def\xxcompetences{%
+\textsl{%
+%\textbf{Savoirs et compétences :}\\
+%Les sources sont associées par un \emph{hacheur série}. La détermination des grandeurs électriques associées à ce montage permet de conclure vis à vis du cahier des charges.
+%\noindent \textbf{Résoudre :} à partir des modèles retenus :
+%\begin{itemize}[label=\ding{112},font=\color{ocre}] 
+%\item choisir une méthode de résolution analytique, graphique, numérique;
+%\item mettre en \oe{}uvre une méthode de résolution.
+%\end{itemize}
+%\begin{itemize}[label=\ding{112},font=\color{ocre}] 
+%\item \textit{Rés -- C1.1 :} Loi entrée sortie géométrique et cinématique -- Fermeture géométrique.
+%\end{itemize}
+%
+%\noindent \textit{Mod2 -- C4.1 :} Représentation par schéma-blocs.
+}}
+
+\def\xxfigures{
+\includegraphics[width=.3\linewidth]{images/e3a_10}
+%\includegraphics[width=.4\linewidth]{images/ccs_00}
+}%figues de la page de garde
+
+
+\def\xxpied{%
+%Cycle 01 -- Modéliser le comportement des systèmes multiphysiques\\
+\xxactivite%
+}
+
+\setcounter{secnumdepth}{5}
+%---------------------------------------------------------------------------
+
+\usepackage{pgfplots}
+\begin{document}
+%\defimages{images}
+%\chapterimage{png/Fond_Cin}
+\input{style/new_pagegarde}
+\vspace{5cm}
+\pagestyle{fancy}
+\thispagestyle{plain}
+
+\def\columnseprulecolor{\color{ocre}}
+\setlength{\columnseprule}{0.4pt} 
+
+%\defimages2{images}
+
+\begin{multicols}{2}
+
+\subsection*{Mise en situation}
+
+
+%\begin{minipage}[c]{.3\linewidth}
+%\begin{center}
+%
+%\end{center}
+%\end{minipage}  \hfill
+%\begin{minipage}[c]{.65\linewidth}
+Un mélangeur interne à rotors engrenants est une machine utilisée dans l'industrie pour effectuer le mélange du caoutchouc et d'additifs divers. Il est, par exemple, utilisé dans la fabrication des pneumatiques.
+Nous nous intéresserons dans cette étude au modèle K5 de la société Farrel.
+
+Le mélangeur est principalement constitué de :
+\begin{itemize}
+\item une porte de chargement du caoutchouc et des différents additifs (a);
+\item un fouloir permettant de pousser les différents ingrédients vers la chambre de mélangeage (b);
+\item deux rotors à axes parallèles tournant en sens inverses (c) et (c');
+\item une chambre de mélangeage (d);
+\item une porte de déchargement (e).
+\end{itemize}
+%\end{minipage}
+
+\begin{center}
+\includegraphics[width=.7\linewidth]{images/e3a_11}
+\end{center}
+
+Le modèle K5 permet de mélanger 100 kg de matière dans une chambre ayant une contenance de 143 litres. Le mélangeur a une masse totale de 16 tonnes. La masse du moteur électrique entraînant les rotors est de 2,5 tonnes.
+
+Les caractéristiques du mélange obtenu dépendent, en plus des caractéristiques des différents constituants, des conditions dans lesquelles s'effectue le mélange. Il est donc important de maîtriser, au cours des différentes phases du mélange, la vitesse de rotation des rotors et l'effort exercé par le fouloir tout en surveillant la température dans la chambre qui ne doit pas dépasser une valeur limite (pour que le mélange ne vulcanise pas dans le mélangeur).
+ 
+
+
+
+
+\begin{obj}
+Vérifier le dimensionnement de l'actionneur. Choisir et régler un correcteur pour optimiser les performances de l'asservissement de vitesse participant à l'exigence << Effectuer le mélange dans les conditions optimales~>>.
+\end{obj}
+
+
+
+\subsection*{Construction du schéma-blocs}
+\begin{obj}
+Mise en place de la structure globale de l’asservissement de vitesse.
+\end{obj}
+
+L'asservissement en vitesse des rotors est représenté par le schéma suivant :
+
+\begin{center}
+\includegraphics[width=\linewidth]{images/e3a_01}
+\end{center}
+
+$\omega_c$ : consigne de vitesse ;  $\omega_m$: vitesse moteur ; $\omega_1$: vitesse rotor 1 ; $\omega_2$ : vitesse rotor 2.
+
+\begin{rem}
+Ces quatre vitesses sont des vitesses angulaires par rapport au bâti.
+\end{rem}
+
+On donne les équations suivantes caractérisant le moteur :
+%\begin{multicols}{2}
+\begin{enumerate}
+\item $C_m(t)+C_r(t)=J\dfrac{\dd \omega_m(t)}{\dd t}$;
+\item $u(t)=Ri(t)+L\dfrac{\dd i(t)}{\dd t}+e(t)$;
+\item $C_m(t)=k_i i(t)$;
+\item $e(t)=k_e\omega_m(t)$.
+\end{enumerate}
+
+On donne les équations suivantes caractérisant le moteur :
+
+\begin{itemize}
+\item $R$ : résistance de l'induit;
+\item $L$ : inductance de l'induit;
+\item $u(t)$ : tension d'alimentation du moteur;
+\item $i(t)$ : courant moteur;
+\item $e(t)$ : force contre électromotrice;
+\item $C_m(t)$ : couple disponible sur l'arbre moteur;
+\item $C_r(t)$ : couple résistant ramené sur l'arbre moteur;
+\item $\omega_m(t)$ : vitesse de rotation de l'arbre moteur;
+\item $J$ : moment d'inertie ramené sur l'arbre moteur;
+\item $k_e$ : constante de force contre électromotrice;
+\item $k_i$ : constante de couple.
+\end{itemize}
+%\end{multicols}
+
+On notera $C_m(p)$, $C_r(p)$, $\Omega_m(p)$, $U(p)$, $I(p)$ et $E(p)$ les transformées de Laplace des différentes grandeurs physiques définies ci-dessus.
+
+\subparagraph{}
+\textit{En considérant que toutes les conditions initiales sont nulles, donner les quatre équations précédentes dans le domaine de Laplace.}
+
+\subparagraph{}
+\textit{Remplir les fonctions de transfert des cases d, e, f et g ainsi que les trois grandeurs physiques manquantes (zones grisées) sur le schéma-bloc fourni sur le cahier réponses.}
+%
+%Le schéma cinématique et les caractéristiques du réducteur sont fournis en annexe B. ****
+%
+%\subparagraph{}
+%\textit{Donner la valeur algébrique des rapports de réduction $r_1=\dfrac{\omega_1}{\omega_m}$ et $r_2=\dfrac{\omega_2}{\omega_m}$ en fonction des nombres de dents $Z_i$. Faire les applications numériques.}
+
+On a $r_1 = -r_2 = \dfrac{1}{30}$.
+\subparagraph{}
+\textit{Quelle doit être la fonction de transfert $K_a$ de l'adaptateur de consigne (case a) si l'on veut que l’écart $\varepsilon$ soit nul quand la vitesse $\omega_1$ est égale à la vitesse de consigne $\omega_c$ ? Remplir la case a du document réponse.}
+
+
+Dans un premier temps nous considérerons que le correcteur est proportionnel de fonction de transfert $kc$.
+
+\subparagraph{}
+\textit{Déterminer l'expression littérale de la fonction de transfert  $H(p)=\dfrac{K}{1+\dfrac{2\xi}{\omega_0}p+\dfrac{p^2}{\omega_0^2}}$ de suivi de consigne ($C_r(p) = 0$). La mettre sous la forme d'un système canonique d'ordre 2 et identifier les constantes caractéristiques.}
+
+\subsection*{Étude de l'asservissement de vitesse}
+
+\begin{obj}
+Choisir et régler un correcteur pour répondre au cahier des charges.
+\end{obj}
+
+Pour cette partie, on utilisera le schéma-blocs à retour unitaire suivant :
+\begin{center}
+\includegraphics[width=.8\linewidth]{images/e3a_06.png}
+\end{center}
+
+On a $H_1(p)=\dfrac{3000}{1+1,6\, 10^{-2}p}$, $H_2(p)=\dfrac{5,7\, 10^{-5}\left(1+ 1,6\, 10^{-2}p\right)}{1+2,9\, 10^{-2}p+4,6\, 10^{-4}p^2}$ et $A=5$ (sans unité). Les valeurs numériques sont dans les unités du système international.
+
+Le cahier des charges impose les conditions suivantes. 
+\begin{center}
+\includegraphics[width=.8\linewidth]{images/e3a_07.png}
+\end{center}
+
+\begin{rem}
+\begin{itemize}
+\item La perturbation en échelon de couple modélise une variation brusque du couple résistant au niveau des rotors due à la mise en action du fouloir.
+\item La perturbation en rampe de couple modélise une variation lente du couple résistant liée à la variation de température du mélange.
+\end{itemize}
+\end{rem}
+
+Le diagramme de Bode de la fonction de transfert en boucle ouverte du système non corrigé ($C(p) = 1$) est donné ci-dessous.
+
+\begin{center}
+\includegraphics[width=.8\linewidth]{images/e3a_08.png}
+\end{center}
+
+
+\subparagraph{}
+\textit{Le système modélisé ainsi est-il stable ? Justifier votre réponse.}
+
+\subparagraph{}
+\textit{Si l'on considère dans un premier temps que le correcteur est proportionnel de fonction de transfert $C(p) = K$, déterminer $\varepsilon(p)$. Déterminer l'écart dans chacun des trois cas proposés.}
+
+\subparagraph{}
+\textit{Quel(s) type(s) de correcteur(s) peut (peuvent) permettre de répondre aux trois critères de précision du cahier des charges.}
+
+Pour la suite nous utiliserons un correcteur de fonction de transfert  $C(p)=K\dfrac{1+Tp}{Tp}$.
+
+\subparagraph{}
+\textit{Donner le nom de ce correcteur et tracer le diagramme de Bode (asymptotique et allure du diagramme réel) du correcteur seul. Indiquer les pentes et points caractéristiques en fonction de $K$ et $T$.}
+
+On choisit la valeur de $T$ de telle façon que la valeur de la pulsation conduisant à un déphasage de $-45\degres$ pour le correcteur seul soit dix fois plus petite que la pulsation pour laquelle la FTBO non corrigée présente un déphasage de $-90\degres$.
+\subparagraph{}
+\textit{Déterminer la valeur de $T$ correspondante.}
+
+\subparagraph{}
+\textit{Tracer, sur le cahier réponses, le diagramme asymptotique de Bode de la FTBO corrigée avec $K = 1$ et votre valeur de $T$. Indiquer les pentes et points caractéristiques.}
+
+On donne, sur le cahier réponses, le diagramme de Black de la FTBO corrigée avec T déterminé à la question précédente et $K = 1$.
+
+
+\subparagraph{}
+\textit{Déterminer la plus grande valeur de $K$ (notée $K_{\text{stab}}$) permettant de satisfaire au critère de stabilité. Vous porterez sur la courbe les tracés que vous jugerez utiles.}
+
+\subparagraph{}
+\textit{On donne, sur le cahier réponses, les courbes de la réponse du système à une entrée en échelon unitaire ($\omega_c(t) = u(t)$) pour $K$ prenant les valeurs 1 ; 2 ; 3 ; 3,5 et 4.}
+
+
+\subparagraph{}
+\textit{La valeur de $K_{\text{stab}}$ trouvée à la question précédente est-elle compatible avec les critères de précision en suivi de consigne, d'amortissement et de rapidité ? Justifiez votre réponse.}
+
+\subparagraph{}
+\textit{Choisir pour $K$ une valeur permettant de respecter à la fois les critères de stabilité, amortissement, rapidité et précision en suivi de consigne. Vous justifierez vos réponses et porterez sur la courbe les tracés que vous jugerez utiles.}
+
+ 
+Le correcteur ayant été dimensionné, le schéma-bloc peut se mettre sous la forme suivante :
+\begin{center}
+\includegraphics[width=.8\linewidth]{images/e3a_09.png}
+\end{center}
+
+On a $F(p)=\dfrac{2,25\, 10^{5}\left(1+ 10,2 p\right)}{p\left(1+1,6\, 10^{-2}p\right)}$ et $H_2(p)=\dfrac{5,7\, 10^{-5}\left(1+ 1,6\, 10^{-2}p\right)}{1+2,9\, 10^{-2}p+4,6\, 10^{-4}p^2}$. Les valeurs numériques sont dans les unités du système international.
+
+
+Nous nous intéressons maintenant à la précision en régulation du système modélisé ainsi. L'étude sera donc faite pour une consigne nulle $\omega_c(t) = 0$.
+
+\subparagraph{}
+\textit{Déterminer l'expression de $\varepsilon(p)$ en fonction de $C_r(p)$, $F(p)$ et $H_2(p)$.}
+
+\subparagraph{}
+\textit{Que vaut $\varepsilon_1 = \lim\limits_{t \to + \infty} \varepsilon(t)$ pour une perturbation en échelon $C_r(t)=bu(t)$ ? Justifier votre réponse et conclure quant au respect du cahier des charges.}
+
+\subparagraph{}
+\textit{Que vaut $\varepsilon_2 = \lim\limits_{t \to + \infty} \varepsilon(t)$ pour une perturbation en rampe $C_r(t)=c t u(t)$ ? Le cahier des charges est-il respecté (justifier par l'application numérique).}
+
+
+\end{multicols}
+
+\begin{center}
+\rotatebox{-90}{\includegraphics[height=\linewidth]{images/dr_01.png}}
+\end{center}
+\begin{center}
+\includegraphics[width=\linewidth]{images/dr_02.png}
+\end{center}
+\begin{center}
+\includegraphics[width=\linewidth]{images/dr_03.png}
+\end{center}
+
+\end{document}
+
+
+\begin{obj}
+\end{obj}
+
+\begin{center}
+\includegraphics[width=.8\linewidth]{images/e3a_06.png}
+\end{center}
+
+\subparagraph{}
+\textit{}
+\ifprof
+\begin{corrige}
+\end{corrige}
+\else
+\fi

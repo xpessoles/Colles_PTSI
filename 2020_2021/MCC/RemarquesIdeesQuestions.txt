@@ -1,0 +1,17 @@
+Cours 
+Faire un bilan de puissance en fonction du type d'excotation (indépendante, aimants permanents). 
+
+(Pour une excitation indépendante, toute la puissance absorbée par l'inducteur est consommé par effet joule). 
+
+
+Cem = K phi I
+
+Dans le cas d'un mcc a aimant permanent, K* phi=Kc
+Que cela vaut-il quand l'excitation est séparée ??
+Le flux est variable ? Que cela signifie, comment le calculer ?
+Dans le cas ou le courant dans l'inducteur est constant, le flux est constant. 
+
+
+Notion d'ondulation du couple ?
+
+C'est quoi un mcc a excitation série

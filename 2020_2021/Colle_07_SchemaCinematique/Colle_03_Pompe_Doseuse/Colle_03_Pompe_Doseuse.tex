@@ -1,0 +1,157 @@
+%%%% Paramétrage du TD %%%%
+\def\xxactivite{Colle \ifprof -- Corrigé \else \fi} % \normalsize \vspace{-.4cm}
+\def\xxauteur{\textsl{Xavier Pessoles}}
+
+
+\def\xxnumchapitre{Chapitre 1 \vspace{.2cm}}
+\def\xxchapitre{\hspace{.12cm} }
+
+
+\def\xxcompetences{%
+\vspace{-.3cm}
+\textsl{%
+\textbf{Savoirs et compétences :}\\
+\vspace{-.4cm}
+%\begin{itemize}[label=\ding{112},font=\color{ocre}] 
+%%\item \textit{Res1.C4 : } Correction
+% \item \textit{Res1.C4.SF1 : } Proposer la démarche de réglage d’un correcteur proportionnel
+%%proportionnel intégral 
+%%et à avance de phase
+%\item \textit{Con.C2 : } 	Correction d’un système asservi	
+%\item \textit{Con.C2.SF1 : } Choisir un type de correcteur adapté
+%\end{itemize}
+}}
+
+\def\xxauteur{\textsl{Xavier Pessoles}}
+
+\def\xxtitreexo{Pompe doseuse\ifnormal $\star$ \else \fi \iftdifficile $\star\star\star$ \else \fi }
+\def\xxsourceexo{\hspace{.2cm} \footnotesize{}}
+
+\def\xxfigures{
+%\includegraphics[width=.6\linewidth]{images/fig_01}
+}%figues de la page de garde
+
+
+\iflivret
+\input{../../style/new_pagegarde}
+\else
+\input{../../style/new_pagegarde}
+\fi
+\setlength{\columnseprule}{.1pt}
+
+\pagestyle{fancy}
+\thispagestyle{plain}
+
+\vspace{4.5cm}
+
+\def\columnseprulecolor{\color{ocre}}
+\setlength{\columnseprule}{0.4pt} 
+
+\setcounter{exo}{0}
+
+\ifprof
+\begin{multicols}{2}
+\else
+\begin{multicols}{2}
+\fi
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\subsection*{Mise en situation}
+L’appareil à étudier est représenté sur le dessin d’ensemble (grande feuille A3). Il est associé à la nomenclature suivante. Le dessin est grosso-modo à l’échelle 0,35.
+
+\begin{center}
+\includegraphics[width=\linewidth]{images/fig_02}
+\end{center}
+
+
+Cette pompe doseuse est utilisée dans l’industrie agro-alimentaire pour effectuer le dosage de produits dont la consistance peut varier de l’état liquide (des soupes) à l’état très pâteux (des pâtés) avec des inclusions solides.
+
+\begin{center}
+\includegraphics[width=\linewidth]{images/fig_03}
+\end{center}
+
+Cet appareil peut être soit intégré dans une chaîne complète de conditionnement, soit utilisé de façon autonome.
+
+Il est entraîné par un groupe de motorisation fixé sur 28, non représenté,  associant un moteur électrique, un variateur de vitesse à poulies et courroies, et un réducteur.
+
+\begin{center}
+\includegraphics[width=\linewidth]{images/fig_05}
+\end{center}
+
+
+\subsection*{Fonctionnement}
+Le fonctionnement de la pompe est basé sur la combinaison :
+\begin{itemize}
+\item du mouvement de translation alternatif du piston (obtenu par un système bielle manivelle) : la bielle est constituée principalement des pièces 19 et 21.
+\item du mouvement de rotation continu d’une chambre tournante 14 obtenu par un renvoi d’angle à pignons coniques (pignons 2 et 4).
+\end{itemize}
+
+\begin{center}
+\includegraphics[width=\linewidth]{images/fig_06}
+\end{center}
+
+La chambre tournante comporte une lumière passant successivement devant l’orifice d’aspiration (lorsque le piston recule) et de refoulement (lorsque le piston avance).
+
+\begin{center}
+\includegraphics[width=\linewidth]{images/fig_07}
+\end{center}
+
+
+
+
+\subsection*{Régalge de la dose}
+Le volume dosé est réglé en agissant sur l’excentration e du système bielle manivelle, au moyen du bouton moleté 23.
+
+Ce bouton commande un système vis-écrou 24-25, dont le blocage en position après réglage est réalisé par serrage de l’écrou 31.
+
+
+\begin{itemize}
+\item Capacité de dosage : 0 à \SI{600}{cm^3}.
+\item Cadence : environ 10 à 60 coups par minute suivant réglage du variateur.
+\item Motorisation : moteur \SI{220}{V}/\SI{380}{V}, puissance 1, \SI{1}{KW}, fréquence de rotation \SI{1500}{tr/min}.
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Étude technologique}
+
+\subparagraph{}\textit{Le schéma ci-dessous décrit le mécanisme étudié dans une position quelconque pour un volume dosé de \SI{300}{cm^3}. Compléter le tracé du deuxième schéma décrivant le mécanisme étudié dans une position «piston en fin de phase de refoulement» pour un volume dosé de \SI{600}{cm^3}.}
+
+\begin{center}
+\includegraphics[width=\linewidth]{images/fig_08}
+\end{center}
+
+
+\subparagraph{}\textit{Justifier la présence d’un dispositif de réglage de longueur de la bielle (19+21).}
+
+\subparagraph{}\textit{Décrire le mode opératoire à suivre pour procéder au réglage de la longueur de la bielle (19+21).}
+
+\subparagraph{}\textit{Calculer, en utilisant la nomenclature le rapport des fréquences de rotation des roues coniques  2 et 4. Justifier en quoi cette valeur du rapport de transmission est impérative.}
+
+\subparagraph{}\textit{L’étanchéité est assurée pour partie par des joints toriques. Du point de vue cinématique quelles sont les limites de leur utilisation.}
+
+\subparagraph{}\textit{Déterminer par coloriage les sous-ensembles cinématiques directement sur le dessin d’ensemble. Il faudra le  joindre à la copie.}
+
+\subparagraph{}\textit{Faire le schéma cinématique minimal. Les systèmes de réglage [réglage de la bielle et réglage de l'excentration] devront apparaître clairement sur votre schéma.}
+
+\subsection*{Travail graphique}
+\subparagraph{}\textit{Représenter la manivelle 3 :}
+\begin{itemize}
+\item vue de face extérieure (avec les arêtes cachées);
+\item vue de gauche en coupe CC (sans arêtes cachées);
+\item vue de dessus avec :
+\begin{itemize}
+\item demi vue extérieure (sans arêtes cachées),
+\item demi coupe EE (sans arêtes cachées).
+\end{itemize}
+\end{itemize}
+\ifprof
+\end{multicols}
+\else
+\end{multicols}
+\fi
+
+
+\begin{center}
+\includegraphics[width=\linewidth]{images/fig_09}
+\end{center}

@@ -1,0 +1,664 @@
+\documentclass[10pt,fleqn]{article} % Default font size and left-justified equations
+\usepackage[%
+    pdftitle={Modélisation dynamique},
+    pdfauthor={Xavier Pessoles}]{hyperref}
+
+    
+\input{style/new_style}
+\input{style/macros_SII}
+\usepackage{multicol}
+\usepackage{siunitx}
+%\usepackage{picins}
+\fichetrue
+%\fichefalse
+
+\proftrue
+\proffalse
+
+\tdtrue
+%\tdfalse
+
+\courstrue
+\coursfalse
+
+
+\def\classe{\textsf{PSI$\star$ -- MP}}
+\def\xxnumpartie{Cycle 06}
+\def\xxpartie{Modéliser le comportement des systèmes mécaniques dans le but d'établir une loi de comportement ou de déterminer des actions mécaniques en utilisant les méthodes énergétiques}
+
+\def\xxnumchapitre{Chapitre 1 \vspace{.2cm}}
+\def\xxchapitre{\hspace{.12cm} Approche énergétique}
+
+\def\discipline{Sciences \\Industrielles de \\ l'Ingénieur}
+\def\xxtete{Sciences Industrielles de l'Ingénieur}
+
+
+
+
+\def\xxtitreexo{Révisions -- Rapports de transmission}%Motorisation du moteur Haibike}
+\def\xxsourceexo{%\hspace{.2cm} \footnotesize{Émilien Durif -- E3A PSI 2011}
+}
+
+
+\def\xxposongletx{2}
+\def\xxposonglettext{1.45}
+\def\xxposonglety{20}
+%\def\xxonglet{Part. 1 -- Ch. 3}
+\def\xxonglet{\textsf{Cycle 06}}
+
+\def\xxactivite{Application}
+\def\xxauteur{\textsl{X. Pessoles}}
+
+\def\xxcompetences{%
+\textsl{%
+\textbf{Savoirs et compétences :}\\
+%Les sources sont associées par un \emph{hacheur série}. La détermination des grandeurs électriques associées à ce montage permet de conclure vis à vis du cahier des charges.
+%\noindent \textbf{Résoudre :} à partir des modèles retenus :
+%\begin{itemize}[label=\ding{112},font=\color{ocre}] 
+%\item choisir une méthode de résolution analytique, graphique, numérique;
+%\item mettre en \oe{}uvre une méthode de résolution.
+%\end{itemize}
+%\begin{itemize}[label=\ding{112},font=\color{ocre}] 
+%\item \textit{Rés -- C1.1 :} Loi entrée sortie géométrique et cinématique -- Fermeture géométrique.
+%\end{itemize}
+%
+%\noindent \textit{Mod2 -- C4.1 :} Représentation par schéma bloc.
+}}
+
+\def\xxfigures{
+%\includegraphics[width=.7\linewidth]{images/axe_y_photo}
+}%figues de la page de garde
+
+
+\def\xxpied{%
+Cycle 06 -- Modélisation mécanique -- Énergétique\\% afin de valider leurs performances.\\
+Chapitre 1 -- \xxactivite%
+}
+
+\setcounter{secnumdepth}{5}
+%---------------------------------------------------------------------------
+
+\usepackage{pgfplots}
+\begin{document}
+\def\pathfig{images}
+%\chapterimage{png/Fond_Cin}
+\input{style/new_pagegarde}
+\vspace{4.5cm}
+\pagestyle{fancy}
+\thispagestyle{plain}
+
+\def\columnseprulecolor{\color{ocre}}
+\setlength{\columnseprule}{0.4pt} 
+
+\def\pathfig{images}
+
+\ifprof
+\begin{multicols}{2}
+\else
+\begin{multicols}{2}
+\fi
+
+
+\section*{Exercice 1 -- Train d'engrenages simple}
+\setcounter{exo}{0}
+
+\ifprof
+\else
+Soit le train d'engrenages suivant. 
+\begin{center}
+\includegraphics[width=.7\linewidth]{images/TrainSimple_01}
+\end{center}
+\fi
+
+\subparagraph{}
+\textit{Déterminer $\dfrac{\omega_{3/0}}{\omega_{1/0}}$ en fonction du nombre de dents des roues dentées.}
+\ifprof
+\begin{corrige}
+On a $\dfrac{\omega_{3/0}}{\omega_{1/0}}=-\dfrac{Z_1}{Z_3}$.
+\end{corrige}
+\else
+\fi
+
+\subparagraph{}
+\textit{Donner une relation géométrique entre $Z_1$, $Z_2$ et $Z_3$ permettant de garantir le fonctionnement du train d'engrenages. }
+\ifprof
+\begin{corrige}
+On a $Z_3 = 2Z_2 + Z_1$.
+\end{corrige}
+\else
+\fi
+
+
+
+\ifprof
+\else
+Soit le train d'engrenages suivant. 
+\begin{center}
+\includegraphics[width=.7\linewidth]{images/TrainSimple_02}
+\end{center}
+\fi
+
+\subparagraph{}
+\textit{Déterminer $\dfrac{\omega_{4/0}}{\omega_{1/0}}$ en fonction du nombre de dents des roues dentées.}
+\ifprof
+\begin{corrige}
+On a $\dfrac{\omega_{4/0}}{\omega_{1/0}}=-\dfrac{Z_1Z_{22}}{Z_4Z_{21}}$.
+\end{corrige}
+\else
+\fi
+
+\subparagraph{}
+\textit{Donner une relation géométrique entre $Z_1$, $Z_{21}$, $Z_{22}$ et $Z_4$ permettant de garantir le fonctionnement du train d'engrenages. }
+\ifprof
+\begin{corrige}
+On a $Z_1+Z_{21}+Z_{22}= Z_4$.
+\end{corrige}
+\else
+\fi
+
+
+
+\ifprof
+\else
+Soit le train d'engrenages suivant. 
+\begin{center}
+\includegraphics[width=.7\linewidth]{images/TrainSimple_03}
+\end{center}
+\fi
+
+
+\subparagraph{}
+\textit{Déterminer $\dfrac{\omega_{4/0}}{\omega_{1/0}}$ en fonction du nombre de dents des roues dentées.}
+\ifprof
+\begin{corrige}
+On a $\dfrac{\omega_{4/0}}{\omega_{1/0}}=\dfrac{Z_1Z_{22}}{Z_4Z_{21}}$.
+\end{corrige}
+\else
+\fi
+
+
+\ifprof
+\else
+Soit le train d'engrenages suivant. 
+\begin{center}
+\includegraphics[width=.7\linewidth]{images/TrainSimple_04}
+\end{center}
+\fi
+
+
+\subparagraph{}
+\textit{Déterminer $\dfrac{\omega_{4/0}}{\omega_{1/0}}$ en fonction du nombre de dents des roues dentées.}
+\ifprof
+\begin{corrige}
+On a $\dfrac{\omega_{4/0}}{\omega_{1/0}}=\dfrac{Z_1Z_{22}}{Z_4Z_{21}}$.
+\end{corrige}
+\else
+\fi
+
+
+
+
+\section*{Exercice 2 -- Train d'engrenages (cheville NAO)}
+\setcounter{exo}{0}
+
+
+\ifprof
+\else
+NAO est un robot humanoïde conçu par la société française Aldebaran. À l'origine il a été conçu comme prototype du robot Romeo, destiné à être au service des personnes. NAO est utilisé à l'heure actuelle dans la recherche en robotique et dans des domaines pédagogiques. 
+\begin{obj}
+On s'intéresse ici à la cheville NAO. On cherche à savoir si, à partir du moteur retenu par le constructeur, la chaîne de transmission de puissance permet de vérifier les exigences suivantes : 
+\begin{itemize}
+\item exigence 1.1.1.1 : la vitesse de roulis doit être inférieure à \SI{42}{tr/min};
+\item exigence 1.1.1.2 : la vitesse de tangage doit être inférieure à \SI{60}{tr/min}.
+\end{itemize}
+
+\end{obj}
+
+
+
+\begin{center}
+\includegraphics[width=.7\linewidth]{images/nao_01}
+\end{center}
+
+La fréquence de rotation des moteurs permettant chacun des deux mouvements est de \SI{8300}{tr/min}.
+
+Pour la chaîne de transmission de tangage on donne  le nombre de dents et le module de chaque roue dentée : 
+\begin{itemize}
+\item pignon moteur : $Z_m=20$, $M_m=0,3$;
+\item grand pignon 1 : $Z_1 = 80$, $M_1=0,3$;
+\item petit pignon 1 : $Z_1' = 25$, $M_1'=0,4$;
+\item grand pignon 2 : $Z_2 = 47$, $M_2=0,4$;
+\item petit pignon 2 : $Z_2' = 12$, $M_2'=0,4$;
+\item grand pignon 3 : $Z_3 = 58$, $M_3=0,4$;
+\item petit pignon 3 : $Z_3' = 10$, $M_3'=0,7$;
+\item roue de sortie : $Z_3 = 36$, $M_3=0,7$.
+\end{itemize}
+
+\begin{center}
+\includegraphics[width=.95\linewidth]{images/nao_02}
+\end{center}
+
+Pour la chaîne de transmission du roulis on donne le nombre de dents et le module de chaque roue dentée : 
+\begin{itemize}
+\item pignon moteur : $Z_m=13$, $M_m=0,3$;
+\item grand pignon 1 : $Z_1 = 80$, $M_1=0,3$;
+\item petit pignon 1 : $Z_1' = 25$, $M_1'=0,4$;
+\item grand pignon 2 : $Z_2 = 47$, $M_2=0,4$;
+\item petit pignon 2 : $Z_2' = 12$, $M_2'=0,4$;
+\item grand pignon 3 : $Z_3 = 58$, $M_3=0,4$;
+\item petit pignon 3 : $Z_3' = 10$, $M_3'=0,7$;
+\item roue de sortie 3 : $Z_3 = 36$, $M_3=0,7$.
+\end{itemize}
+
+
+
+\begin{center}
+\includegraphics[width=.8\linewidth]{images/nao_03}
+\end{center}
+\fi
+
+
+
+\subparagraph{}
+\textit{Quels doivent être les rapports de réductions des transmissions par engrenage afin de respecter les exigences 1.1.1.1 et 1.1.1.2 ?}
+\ifprof
+\begin{corrige}
+D'après le diagramme de définition des blocs et le diagramme des exigences, les rapports de transmission doivent être : 
+\begin{itemize}
+\item pour l'axe de tangage : $\dfrac{N_{\text{moteur}}}{N_{\text{Tangage}}}=138,33$ au minimum; 
+\item pour l'axe de roulis :  $\dfrac{N_{\text{moteur}}}{N_{\text{Roulis}}}= 197,61$ au minimum.
+\end{itemize}
+\end{corrige}
+\else
+\fi
+
+
+\ifprof
+\subparagraph{}
+\textit{Dans le cas de l'axe de tangage, remplir le tableau suivant :}
+\begin{corrige} ~\\
+\begin{center}
+\begin{tabular}{|p{1.7cm}|c|c|p{1.3cm}|}
+\hline
+Roue dentée & Module & Nb dents & Diamètre (mm)\\
+\hline
+Pignon 03 20 & 0,3 &20        & 6		\\ \hline
+Mobile Inf1 Roue & 0,3 & 80  & 24 	\\ \hline 
+Mobile Inf1 Pignon & 0,4 & 25 & 10	\\ \hline
+Mobile Inf2 Roue & 0,4 & 47   & 18,8	\\ \hline
+Mobile Inf2 Pignon & 0,4 & 12 & 4,8	\\ \hline
+Mobile Inf4 Roue & 0,4 & 58   & 23,2	\\ \hline
+Mobile Inf4 Pignon & 0,7 & 10 & 7	\\ \hline
+Roue de sortie & 0,7 & 36      & 25,2 \\ \hline
+\end{tabular}
+\end{center}
+\end{corrige}
+\else
+\fi
+
+\subparagraph{}
+\textit{Dans le cas de l'axe de tangage, déterminer le diamètre de chaque roue dentée.}
+%
+%\begin{center}
+%\begin{tabular}{|l|c|c|c|}
+%\hline
+%Roue dentée & Module & Nb dents & Diamètre \\
+%\hline
+%& && \\ 
+%Pignon 03 20 & && \\ 
+%&& & \\ \hline
+%&& & \\ 
+%Mobile Inf1 Roue & && \\ 
+%&& & \\ \hline
+%&& & \\ 
+%Mobile Inf1 Pignon & && \\ 
+%&& & \\ \hline
+%&& & \\ 
+%Mobile Inf2 Roue & && \\ 
+%&& & \\ \hline
+%&& & \\ 
+%Mobile Inf2 Pignon & && \\ 
+%&& & \\ \hline
+%&& & \\ 
+%Mobile Inf4 Roue & && \\ 
+%&& & \\ \hline
+%&& & \\ 
+%Mobile Inf4 Pignon & && \\ 
+%&& & \\ \hline
+%&& & \\ 
+%Roue de sortie & && \\
+%&& & \\ 
+%\hline
+%\end{tabular}
+%\end{center}
+%\fi
+%
+%
+\subparagraph{}
+\textit{Dans le cas de l'axe de tangage, réaliser le schéma cinématique minimal.}
+\ifprof
+\begin{corrige}
+\end{corrige}
+\else
+\fi
+
+\subparagraph{}
+\textit{Calculer le rapport de transmission de la chaîne de transmission de l'axe de tangage ? L'exigence 1.1.1.2 est-elle respectée ? Si non, quelle(s) solution(s) de remédiation pourrait-on proposer ?}
+\ifprof
+\begin{corrige}
+$$
+R_T = (-1)^n \dfrac{80\cdot 47 \cdot 58 \cdot 36}{20\cdot 25\cdot 12 \cdot 10 } = 130,85
+$$
+
+Ceci est inférieur à ce qui est préconisé par le cahier des charges. 
+
+Pour respecter le cahier des charges, on peut :
+\begin{itemize}
+\item choisir un autre moteur;
+\item changer le nombre de dents d'une des roues. Il suffirait pour cela que,  par exemple, la roue de sortie comporte 39 dents. 
+\end{itemize}
+\end{corrige}
+\else
+\fi
+
+\subparagraph{}
+\textit{Calculer le rapport de transmission de la chaîne de transmission de l'axe de roulis ? L'exigence 1.1.1.1 est-elle respectée ? Si non, quelle(s) solution(s) de remédiation pourrait-on proposer ?}
+\ifprof
+\begin{corrige}
+Le rapport de transmission du second train est de 201,3 ce qui est compatible avec le cahier des charges.
+\end{corrige}
+\else
+\fi
+
+
+\section*{Exercice 3 -- Réducteur de roue motrice de chariot élévateur}
+\textit{D'après Florestan Mathurin.}
+\setcounter{exo}{0}
+
+\ifprof
+\else
+
+On s’intéresse au réducteur équipant la roue arrière motrice et directionnelle d’un chariot élévateur de manutention automoteur à conducteur non porté. 
+
+
+
+\begin{center}
+\includegraphics[width=.95\linewidth]{images/char_01}
+\end{center}
+
+
+\textbf{Données }: $z_{27} = \SI{16}{dents}$, $z_{35} = \SI{84}{dents}$, $z_{5} = \SI{14}{dents}$, $z_{11} = \SI{56}{dents}$, $z_{16} = \SI{75}{dents}$. 
+
+\fi
+
+\subparagraph{}
+\textit{Identifier les classes d’équivalence cinématique sur le dessin d’ensemble. }
+\ifprof
+\begin{corrige}
+
+\end{corrige}
+\else
+\begin{center}
+\includegraphics[width=\linewidth]{images/char_02}
+\end{center}
+
+\fi
+
+
+
+\subparagraph{}
+\textit{ Construire le schéma cinématique du réducteur dans le même plan que le dessin.}
+\ifprof
+\begin{corrige}
+\begin{center}
+\includegraphics[width=\linewidth]{images/char_cor_01_BIS}
+\end{center}
+\end{corrige}
+\else
+\fi
+\subparagraph{}
+\textit{Compléter le tableau donnant les caractéristiques des roues et pignons.}
+\ifprof
+\begin{corrige}
+\footnotesize
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+Repère de  & Module  & Nombre & Diamètre primitif  \\
+la roue & $m$ (mm) & de dents $Z$ & $D$ (mm) \\
+\hline
+\hline
+27 & 1,5 &16 & 24\\ \hline
+35 & 1,5 &84 & 126\\ \hline
+5   &1,5 &14 & 21\\ \hline
+11 & 1,5 & 56 & 84 \\ \hline
+16 &  1,5&  75& 112,5\\ \hline
+
+\end{tabular}
+\end{center}
+
+\normalsize
+\end{corrige}
+\else
+\footnotesize
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+Repère de  & Module  & Nombre & Diamètre primitif  \\
+la roue & $m$ (mm) & de dents $Z$ & $D$ (mm) \\
+\hline
+\hline
+27 & & & \\ \hline
+35 & 1,5& & \\ \hline
+5& & & \\ \hline
+11& 1,5 & & \\ \hline
+16& & & \\ \hline
+
+\end{tabular}
+\end{center}
+
+\normalsize
+\fi
+
+
+
+\subparagraph{}
+\textit{Après avoir proposé un paramétrage, indiquer dans quel sens tourne la roue si le moteur 28 (31) tourne dans le sens positif.}
+
+\ifprof
+\begin{corrige}
+Voir figure précédente. Si le moteur tourne dans le sens positif, la roue tourne dans le sens négatif. 
+\end{corrige}
+\else
+\fi
+
+\subparagraph{}
+\textit{Pour une vitesse de \SI{1500}{tr/min} en sortie de moteur, déterminer la vitesse de rotation de la roue. Le diamètre de la roue est de \SI{150}{mm}. Quelle est la vitesse du véhicule ? }
+\ifprof
+\begin{corrige}
+Le rapport de réduction de la transmission est le suivant : 
+$k=\dfrac{Z_{27} Z_{5} Z_{11} }{Z_{35} Z_{11} Z_{16}} = \dfrac{16\cdot 14}{84\cdot 75} =0,0355 $
+
+La vitesse de rotation de la roue est donc de $\SI{53,33}{tr.min^{-1}}$ soit \SI{5,59}{rad.s^{-1}}. 
+On en déduit la vitesse du véhicule : $5,59 \times 0,15 = \SI{0,84}{m.s^{-1}}\simeq \SI{3}{km.h^{-1}}$.
+
+\end{corrige}
+\else
+\fi
+
+
+\section*{Exercice 4 -- Transmission vis -- écrou}
+\textit{D'après ressources Pole Chateaubriand -- Joliot-Curie.}
+\setcounter{exo}{0}
+
+\ifprof
+\else
+
+La conduite en ville nécessite des répétitions
+fréquentes de la manœuvre d’embrayage /
+débrayage. Pour améliorer le confort de conduite,
+on peut substituer la force musculaire du
+conducteur par une commande électrique de
+l’embrayage. Dans ce cas, il devient nécessaire de
+renseigner l’unité de contrôle électronique sur les
+intentions du conducteur à partir d’un capteur de
+position placé sur la pédale d’embrayage.
+L’automatisation de la fonction embrayage
+permet de corriger les éventuelles fausses
+manœuvres du conducteur, d’assurer la fonction
+anti-calage du moteur et de participer aux
+fonctions d’anti-patinage et d’anti-blocage des
+roues.
+
+\begin{center}
+\includegraphics[width=\linewidth]{images/rest_01}
+\end{center}
+
+
+En cas d’utilisation de la pédale, il faut recréer les sensations
+au conducteur, c'est-à-dire une résistance mécanique proche
+de celle d’une commande mécanique classique. Pour réaliser
+ce système de retour d’effort la solution peut être passive (un
+ressort, par exemple) ou utiliser un système actif (à l’aide d’un
+actionneur électrique), objet de l’étude.
+L’étude porte sur un démonstrateur de restituteur actif
+d’effort à la pédale. Le démonstrateur permet de tester
+différentes lois de restitution d’effort pour rechercher la plus
+ergonomique. Le système contrôle, par l’intermédiaire d’un
+piston, l’effort sur la tige de poussée de la pédale.
+
+
+\begin{center}
+\includegraphics[width=\linewidth]{images/rest_02}
+\end{center}
+
+Le schéma du restituteur actif est donné ci-dessous. Le pas de la vis est $p_v =\SI{10}{mm}$.
+Le diamètre de la poulie 2 est le double de celui de la poulie 1. 
+
+
+\begin{center}
+\includegraphics[width=\linewidth]{images/rest_03}
+\end{center}
+\fi
+\begin{obj}
+Déterminer la première partie
+de la loi entrée/sortie en vitesse du
+système.
+\end{obj}
+
+\subparagraph{}
+\textit{Sur le schéma cinématique, repasser chaque solide d’une couleur différente.}
+
+\ifprof
+\begin{corrige}
+\end{corrige}
+\else
+\fi
+
+\subparagraph{}
+\textit{Compléter la chaîne d’énergie-puissance partielle en définissant les noms des transmetteurs et les grandeurs
+d’entrée et de sortie cinématiques.}
+
+\ifprof
+\begin{corrige}
+\end{corrige}
+\else
+\fi
+
+
+
+\begin{center}
+\includegraphics[width=\linewidth]{images/rest_04}
+\end{center}
+
+\subparagraph{}
+\textit{Définir la loi entrée-sortie entre la vitesse de translation du piston 3 et la vitesse de rotation du moteur~1. }
+
+\ifprof
+\begin{corrige}
+\end{corrige}
+\else
+\fi
+
+
+\section*{5 -- Axe de machine-outil à commande numérique}
+\textit{D'après ressources Pole Chateaubriand -- Joliot-Curie.}
+\setcounter{exo}{0}
+
+\ifprof
+\else
+L’usinage est une opération de transformation d’un produit par enlèvement de matière.
+Cette opération est à la base de la fabrication de produits dans les industries mécaniques.
+La génération d’une surface par enlèvement de matière est obtenue grâce à un outil muni
+d’au moins une arête coupante. Les différentes formes de pièces sont obtenues par des
+translations et des rotations de l'outil par rapport à la pièce.
+
+\begin{center}
+\includegraphics[width=.6\linewidth]{images/ugv_01}
+\end{center}
+
+On s’intéresse ici à l’axe Y qui met en mouvement le coulisseau 1,
+sur lequel est fixée l’outil, par rapport au bâti 0. Le coulisseau 1 est mis en mouvement par un moteur
+électrique qui délivre un couple moteur $C_m(t)$.
+
+\begin{center}
+\includegraphics[width=\linewidth]{images/ugv_02}
+\end{center}
+
+On note $p$ le pas de vis. 
+\fi
+
+
+\subparagraph{}
+\textit{Définir la loi entrée-sortie entre la vitesse de translation du coulisseau et la vitesse de rotation du moteur. }
+\ifprof
+\begin{corrige}
+\end{corrige}
+\else
+\fi
+
+
+\section*{Exercice 6 -- Treuil de levage}
+\textit{D'après ressources Pole Chateaubriand -- Joliot-Curie.}
+\setcounter{exo}{0}
+\ifprof
+\else
+On s’intéresse à un treuil dont la photo et le modèle cinématique sont donnés ci-dessous.
+\begin{center}
+\includegraphics[width=.5\linewidth]{images/treuil_01}
+\end{center}
+
+\begin{center}
+\includegraphics[width=\linewidth]{images/treuil_02}
+\end{center}
+
+On note $Z_2$ le nombre de dents de la roue dentée de l'arbre 2. On note l'arbre intermédiaire 3 et $Z_{3a}$ et $Z_{3b}$ les nombres de dents de ses deux roues dentées. On note $R$ le rayon du tambour 4 sur lequel s’enroule sans glisser un câble et $Z_4$ le nombre de dents de sa roue dentée.
+
+\fi
+
+\subparagraph{}
+\textit{Déterminer la relation entre $v_{51}$ la vitesse de déplacement de la charge par rapport au bâti et $\omega_{21}$ la vitesse de rotation du moteur.}
+\ifprof
+\begin{corrige}
+\end{corrige}
+\else
+\fi
+
+\ifprof
+\end{multicols}
+\else
+\end{multicols}
+\fi
+
+\end{document}
+
+\subparagraph{}
+\textit{}
+
+\ifprof
+\begin{corrige}
+\end{corrige}
+\else
+\fi
+
+	

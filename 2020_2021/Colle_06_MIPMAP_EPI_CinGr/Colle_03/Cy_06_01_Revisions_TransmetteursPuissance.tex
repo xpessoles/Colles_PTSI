@@ -1,0 +1,217 @@
+\documentclass[10pt,fleqn]{article} % Default font size and left-justified equations
+\usepackage[%
+    pdftitle={Modélisation dynamique},
+    pdfauthor={Xavier Pessoles}]{hyperref}
+
+    
+\input{style/new_style}
+\input{style/macros_SII}
+\usepackage{multicol}
+\usepackage{siunitx}
+%\usepackage{picins}
+\fichetrue
+%\fichefalse
+
+\proftrue
+\proffalse
+
+\tdtrue
+%\tdfalse
+
+\courstrue
+\coursfalse
+
+
+\def\classe{\textsf{PSI$\star$ -- MP}}
+\def\xxnumpartie{Cycle 06}
+\def\xxpartie{Modéliser le comportement des systèmes mécaniques dans le but d'établir une loi de comportement ou de déterminer des actions mécaniques en utilisant les méthodes énergétiques}
+
+\def\xxnumchapitre{Chapitre 1 \vspace{.2cm}}
+\def\xxchapitre{\hspace{.12cm} Approche énergétique}
+
+\def\discipline{Sciences \\Industrielles de \\ l'Ingénieur}
+\def\xxtete{Sciences Industrielles de l'Ingénieur}
+
+
+
+
+\def\xxtitreexo{Révisions -- Rapports de transmission}%Motorisation du moteur Haibike}
+\def\xxsourceexo{%\hspace{.2cm} \footnotesize{Émilien Durif -- E3A PSI 2011}
+}
+
+
+\def\xxposongletx{2}
+\def\xxposonglettext{1.45}
+\def\xxposonglety{20}
+%\def\xxonglet{Part. 1 -- Ch. 3}
+\def\xxonglet{Cycle 06}
+
+\def\xxactivite{Application}
+\def\xxauteur{\textsl{X. Pessoles}}
+
+\def\xxcompetences{%
+\textsl{%
+\textbf{Savoirs et compétences :}\\
+%Les sources sont associées par un \emph{hacheur série}. La détermination des grandeurs électriques associées à ce montage permet de conclure vis à vis du cahier des charges.
+%\noindent \textbf{Résoudre :} à partir des modèles retenus :
+%\begin{itemize}[label=\ding{112},font=\color{ocre}] 
+%\item choisir une méthode de résolution analytique, graphique, numérique;
+%\item mettre en \oe{}uvre une méthode de résolution.
+%\end{itemize}
+%\begin{itemize}[label=\ding{112},font=\color{ocre}] 
+%\item \textit{Rés -- C1.1 :} Loi entrée sortie géométrique et cinématique -- Fermeture géométrique.
+%\end{itemize}
+%
+%\noindent \textit{Mod2 -- C4.1 :} Représentation par schéma bloc.
+}}
+
+\def\xxfigures{
+%\includegraphics[width=.7\linewidth]{images/axe_y_photo}
+}%figues de la page de garde
+
+
+\def\xxpied{%
+Cycle 06 -- Modélisation mécanique -- Énergétique\\% afin de valider leurs performances.\\
+Chapitre 1 -- \xxactivite%
+}
+
+\setcounter{secnumdepth}{5}
+%---------------------------------------------------------------------------
+
+\usepackage{pgfplots}
+\begin{document}
+\def\pathfig{images}
+%\chapterimage{png/Fond_Cin}
+\input{style/new_pagegarde}
+\vspace{4.5cm}
+\pagestyle{fancy}
+\thispagestyle{plain}
+
+\def\columnseprulecolor{\color{ocre}}
+\setlength{\columnseprule}{0.4pt} 
+
+\def\pathfig{images}
+
+\ifprof
+%\begin{multicols}{2}
+\else
+\begin{multicols}{2}
+\fi
+
+
+\section*{Exercice 6 -- {Broyeur à cisailles rotatives}}
+\setcounter{exo}{0}
+\textit{D'après BTS CPI -- 2015.}
+
+\begin{obj}
+Vérifier les performances d'un réducteur.
+\end{obj}
+ECP Group est un fabricant européen spécialisé
+dans la conception et la construction de machines
+permettant la réduction du volume de ces D.I.B. au
+moyen de broyeurs, de compacteurs ou de presses,
+en favorisant la revalorisation, le recyclage ou le réemploi
+de matières.
+
+\begin{center}
+\includegraphics[width=.6\linewidth]{images/broyeur_01}
+\end{center}
+
+\begin{center}
+\includegraphics[width=\linewidth]{images/broyeur_04}
+\end{center}
+
+On donne un extrait du cahier des charges que doit respecter le broyeur.
+
+
+\begin{center}
+\includegraphics[width=\linewidth]{images/broyeur_06}
+\end{center}
+
+On donne le schéma cinématique du broyeur
+\begin{center}
+\includegraphics[width=\linewidth]{images/broyeur_05}
+\end{center}
+
+\subparagraph{}\textit{Donner les rapports de chacun des 4 étages de réduction.}
+
+
+\subparagraph{}\textit{Vérifier que les exigences 1.1 et 1.2 sont satisfaites.}
+
+\subparagraph{}\textit{Évaluer le couple de broyage sur chacun des axes.}
+
+
+
+\section*{Porte d'autobus}
+\setcounter{exo}{0}
+On considère un système d'ouverture de porte d'autobus dont on donne un extrait de cahier des charges ci-dessous.
+
+\begin{center}
+\includegraphics[width=.6\linewidth]{images/fig6_1}
+\end{center}
+
+\begin{center}
+\includegraphics[width=.95\linewidth]{images/SysML/Exigences_Bus}
+\end{center}
+
+ 
+La figure de la page suivante représente le schéma du mécanisme actionneur d'une porte (3) d'autobus (en vue dessus). Au dessus de la porte, un vérin pneumatique (air comprimé) (4,5) entraîne une bielle (2) en liaison pivot avec la carrosserie (1). Le bras (AB), encastré à la bielle (2), entraîne le battant de porte (3) qui est guidé par un maneton (C) se déplaçant dans la rainure. L'amplitude de rotation de la bielle (2) de 90 degrés environ permet d'obtenir les positions extrêmes (ouvert/fermé) du battant (3). 
+
+Pour tous les tracés des vitesses on prendra 10mm/s pour 5mm.
+ La vitesse de sortie du vérin lors de l'ouverture de la porte d'autobus est $||\vectv{F}{4}{5}||=50mm/s$
+
+\subparagraph{}
+\textit{Déterminer graphiquement le vecteur vitesse $\vectv{F}{4}{1}$ en justifiant la démarche suivie. }
+
+\subparagraph{}
+\textit{Déterminer, par équiprojectivité, le vecteur vitesse $\vectv{B}{3}{1}$ en justifiant la démarche suivie.}
+
+\subparagraph{}
+\textit{Donner la direction du vecteur vitesse $\vectv{C}{3}{1}$. En déduire la position du centre instantané de rotation de la porte (3) par rapport au bâti (1) noté $I_{31}$.}
+
+\subparagraph{}
+\textit{Déterminer graphiquement le vecteur vitesse $\vectv{C}{3}{1}$ en justifiant la démarche suivie.}
+
+\subparagraph{}
+\textit{Conclure quant à la capacité de  la porte d'autobus à l'exigence 1.4.1.}
+
+\subparagraph{}
+\textit{Déterminer le CIR du mouvement de (4) par rapport à 1.}
+
+
+
+%\section*{Liaison encastrement démontable}
+%\setcounter{exo}{0}
+%
+%\subparagraph{}
+%\textit{Détailler l'architecture de la liaison encastrement démontable de votre choix.}
+%
+%
+\end{multicols}
+%\begin{center}
+%\includegraphics[width=.55\linewidth]{Dessin_03}
+%\end{center}
+
+\newpage
+
+$$\quad$$
+
+\vspace{15cm}
+
+\begin{center}
+\includegraphics[width=.8\textwidth]{images/fig7}
+\end{center}
+
+
+\end{document}
+
+\subparagraph{}
+\textit{}
+
+\ifprof
+\begin{corrige}
+\end{corrige}
+\else
+\fi
+
+	
