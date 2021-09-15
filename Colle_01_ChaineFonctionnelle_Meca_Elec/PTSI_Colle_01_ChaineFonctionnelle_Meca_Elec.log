@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.10.7)  14 SEP 2021 13:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.10.7)  15 SEP 2021 14:27
 entering extended mode
 **./PTSI_Colle_01_ChaineFonctionnelle_Meca_Elec.tex
 (PTSI_Colle_01_ChaineFonctionnelle_Meca_Elec.tex
@@ -2016,17 +2016,44 @@ Package pdftex.def Info: ../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C
 2_09_DeterminerLoiMouvement1D/02_R/images/02_R_01.png  used on input line 30.
 (pdftex.def)             Requested size: 236.84843pt x 133.34181pt.
 )
+(../../ExercicesCompetences/B2_ProposerModele/B2_14_ModeliserAction_ModeleGloba
+l/516_MAM/516_MAM.tex
+<../../ExercicesCompetences/B2_ProposerModele/B2_14_ModeliserAction_ModeleGloba
+l/516_MAM/images/516_01.pdf, id=28, 371.3875pt x 317.185pt>
+File: ../../ExercicesCompetences/B2_ProposerModele/B2_14_ModeliserAction_Modele
+Global/516_MAM/images/516_01.pdf Graphic file (type pdf)
+<use ../../ExercicesCompetences/B2_ProposerModele/B2_14_ModeliserAction_ModeleG
+lobal/516_MAM/images/516_01.pdf>
+Package pdftex.def Info: ../../ExercicesCompetences/B2_ProposerModele/B2_14_Mod
+eliserAction_ModeleGlobal/516_MAM/images/516_01.pdf  used on input line 23.
+(pdftex.def)             Requested size: 236.84843pt x 202.28622pt.
+)
+(../../ExercicesCompetences/B2_ProposerModele/B2_14_ModeliserAction_ModeleGloba
+l/517_MAM/517_MAM.tex
+<../../ExercicesCompetences/B2_ProposerModele/B2_14_ModeliserAction_ModeleGloba
+l/517_MAM/images/517_01.pdf, id=30, 176.75827pt x 111.1606pt>
+File: ../../ExercicesCompetences/B2_ProposerModele/B2_14_ModeliserAction_Modele
+Global/517_MAM/images/517_01.pdf Graphic file (type pdf)
+<use ../../ExercicesCompetences/B2_ProposerModele/B2_14_ModeliserAction_ModeleG
+lobal/517_MAM/images/517_01.pdf>
+Package pdftex.def Info: ../../ExercicesCompetences/B2_ProposerModele/B2_14_Mod
+eliserAction_ModeleGlobal/517_MAM/images/517_01.pdf  used on input line 23.
+(pdftex.def)             Requested size: 236.84843pt x 148.9561pt.
+)
 File: ../../Style/png/logo_lycee.png Graphic file (type png)
 <use ../../Style/png/logo_lycee.png>
-Package pdftex.def Info: ../../Style/png/logo_lycee.png  used on input line 58.
+Package pdftex.def Info: ../../Style/png/logo_lycee.png  used on input line 68.
 
 (pdftex.def)             Requested size: 56.9055pt x 45.97325pt.
  [2 <../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_09_DeterminerLoiMo
-uvement1D/02_R/images/02_R_01.png>]
+uvement1D/02_R/images/02_R_01.png> <../../ExercicesCompetences/B2_ProposerModel
+e/B2_14_ModeliserAction_ModeleGlobal/516_MAM/images/516_01.pdf> <../../Exercice
+sCompetences/B2_ProposerModele/B2_14_ModeliserAction_ModeleGlobal/517_MAM/image
+s/517_01.pdf>]
 (../../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_ChaineFon
 ctionnelle/59_Levage/59_Levage.tex
 <../../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_ChaineFon
-ctionnelle/59_Levage/images/59_01.png, id=38, 229.3368pt x 179.4705pt>
+ctionnelle/59_Levage/images/59_01.png, id=68, 229.3368pt x 179.4705pt>
 File: ../../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_Chai
 neFonctionnelle/59_Levage/images/59_01.png Graphic file (type png)
 <use ../../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_Chain
@@ -2036,7 +2063,7 @@ cturelle/A3_01_ChaineFonctionnelle/59_Levage/images/59_01.png  used on input li
 ne 46.
 (pdftex.def)             Requested size: 163.61063pt x 128.0374pt.
 <../../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_ChaineFon
-ctionnelle/59_Levage/images/59_02.png, id=39, 231.7458pt x 154.176pt>
+ctionnelle/59_Levage/images/59_02.png, id=69, 231.7458pt x 154.176pt>
 File: ../../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_Chai
 neFonctionnelle/59_Levage/images/59_02.png Graphic file (type png)
 <use ../../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_Chain
@@ -2046,7 +2073,7 @@ cturelle/A3_01_ChaineFonctionnelle/59_Levage/images/59_02.png  used on input li
 ne 52.
 (pdftex.def)             Requested size: 192.45857pt x 128.0374pt.
 <../../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_ChaineFon
-ctionnelle/59_Levage/images/59_03.png, id=40, 129.8451pt x 94.9146pt>
+ctionnelle/59_Levage/images/59_03.png, id=70, 129.8451pt x 94.9146pt>
 File: ../../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_Chai
 neFonctionnelle/59_Levage/images/59_03.png Graphic file (type png)
 <use ../../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_Chain
@@ -2056,7 +2083,7 @@ cturelle/A3_01_ChaineFonctionnelle/59_Levage/images/59_03.png  used on input li
 ne 77.
 (pdftex.def)             Requested size: 194.63438pt x 142.26378pt.
 <../../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_ChaineFon
-ctionnelle/59_Levage/images/59_04.png, id=41, 85.0377pt x 117.8001pt>
+ctionnelle/59_Levage/images/59_04.png, id=71, 85.0377pt x 117.8001pt>
 File: ../../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_Chai
 neFonctionnelle/59_Levage/images/59_04.png Graphic file (type png)
 <use ../../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_Chain
@@ -2068,7 +2095,7 @@ ne 85.
 )
 File: ../../Style/png/logo_lycee.png Graphic file (type png)
 <use ../../Style/png/logo_lycee.png>
-Package pdftex.def Info: ../../Style/png/logo_lycee.png  used on input line 64.
+Package pdftex.def Info: ../../Style/png/logo_lycee.png  used on input line 74.
 
 (pdftex.def)             Requested size: 56.9055pt x 45.97325pt.
  [3 <../../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_Chain
@@ -2081,7 +2108,7 @@ nnelle/59_Levage/images/59_04.png (PNG copy)>]
 (../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_09_DeterminerLoiMouvem
 ent1D/01_T/01_T.tex
 <../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_09_DeterminerLoiMouvem
-ent1D/01_T/images/01_T_01.png, id=53, 88.4103pt x 66.4884pt>
+ent1D/01_T/images/01_T_01.png, id=83, 88.4103pt x 66.4884pt>
 File: ../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_09_DeterminerLoiM
 ouvement1D/01_T/images/01_T_01.png Graphic file (type png)
 <use ../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_09_DeterminerLoiMo
@@ -2115,7 +2142,7 @@ LaTeX Font Info:    Font shape `T1/mdput/m/it' will be
 LaTeX Font Info:    Font shape `T1/mdput/m/it' will be
 (Font)              scaled to size 4.70001pt on input line 41.
 <../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_09_DeterminerLoiMouvem
-ent1D/01_T/images/fig_12.png, id=54, 559.08875pt x 313.17pt>
+ent1D/01_T/images/fig_12.png, id=84, 559.08875pt x 313.17pt>
 File: ../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_09_DeterminerLoiM
 ouvement1D/01_T/images/fig_12.png Graphic file (type png)
 <use ../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_09_DeterminerLoiMo
@@ -2124,19 +2151,49 @@ Package pdftex.def Info: ../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C
 2_09_DeterminerLoiMouvement1D/01_T/images/fig_12.png  used on input line 95.
 (pdftex.def)             Requested size: 213.16214pt x 119.40245pt.
 )
+(../../ExercicesCompetences/B2_ProposerModele/B2_14_ModeliserAction_ModeleGloba
+l/518_MAM/518_MAM.tex
+<../../ExercicesCompetences/B2_ProposerModele/B2_14_ModeliserAction_ModeleGloba
+l/518_MAM/images/518_01.pdf, id=86, 128.61008pt x 73.99927pt>
+File: ../../ExercicesCompetences/B2_ProposerModele/B2_14_ModeliserAction_Modele
+Global/518_MAM/images/518_01.pdf Graphic file (type pdf)
+<use ../../ExercicesCompetences/B2_ProposerModele/B2_14_ModeliserAction_ModeleG
+lobal/518_MAM/images/518_01.pdf>
+Package pdftex.def Info: ../../ExercicesCompetences/B2_ProposerModele/B2_14_Mod
+eliserAction_ModeleGlobal/518_MAM/images/518_01.pdf  used on input line 23.
+(pdftex.def)             Requested size: 236.84843pt x 136.2766pt.
+
+
+LaTeX Warning: Reference `B2:14-gl:518' on page 4 undefined on input line 42.
+
+)
+(../../ExercicesCompetences/B2_ProposerModele/B2_14_ModeliserAction_ModeleGloba
+l/519_MAM/519_MAM.tex
+<../../ExercicesCompetences/B2_ProposerModele/B2_14_ModeliserAction_ModeleGloba
+l/519_MAM/images/519_01.pdf, id=87, 184.9118pt x 85.15674pt>
+File: ../../ExercicesCompetences/B2_ProposerModele/B2_14_ModeliserAction_Modele
+Global/519_MAM/images/519_01.pdf Graphic file (type pdf)
+<use ../../ExercicesCompetences/B2_ProposerModele/B2_14_ModeliserAction_ModeleG
+lobal/519_MAM/images/519_01.pdf>
+Package pdftex.def Info: ../../ExercicesCompetences/B2_ProposerModele/B2_14_Mod
+eliserAction_ModeleGlobal/519_MAM/images/519_01.pdf  used on input line 23.
+(pdftex.def)             Requested size: 236.84843pt x 109.07689pt.
+)
 File: ../../Style/png/logo_lycee.png Graphic file (type png)
 <use ../../Style/png/logo_lycee.png>
-Package pdftex.def Info: ../../Style/png/logo_lycee.png  used on input line 71.
+Package pdftex.def Info: ../../Style/png/logo_lycee.png  used on input line 88.
 
 (pdftex.def)             Requested size: 56.9055pt x 45.97325pt.
-
-[4 <../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_09_DeterminerLoiMou
-vement1D/01_T/images/01_T_01.png> <../../ExercicesCompetences/C2_MettreEnOeuvre
-Demarche/C2_09_DeterminerLoiMouvement1D/01_T/images/fig_12.png>]
+ [4 <../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_09_DeterminerLoiMo
+uvement1D/01_T/images/01_T_01.png> <../../ExercicesCompetences/C2_MettreEnOeuvr
+eDemarche/C2_09_DeterminerLoiMouvement1D/01_T/images/fig_12.png> <../../Exercic
+esCompetences/B2_ProposerModele/B2_14_ModeliserAction_ModeleGlobal/518_MAM/imag
+es/518_01.pdf> <../../ExercicesCompetences/B2_ProposerModele/B2_14_ModeliserAct
+ion_ModeleGlobal/519_MAM/images/519_01.pdf>]
 (../../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_ChaineFon
 ctionnelle/60_Escalier/60_Escalier.tex
 <../../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_ChaineFon
-ctionnelle/60_Escalier/images/60_01.png, id=64, 113.9457pt x 116.8365pt>
+ctionnelle/60_Escalier/images/60_01.png, id=125, 113.9457pt x 116.8365pt>
 File: ../../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_Chai
 neFonctionnelle/60_Escalier/images/60_01.png Graphic file (type png)
 <use ../../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_Chain
@@ -2146,7 +2203,7 @@ cturelle/A3_01_ChaineFonctionnelle/60_Escalier/images/60_01.png  used on input
 line 30.
 (pdftex.def)             Requested size: 113.81102pt x 116.69714pt.
 <../../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_ChaineFon
-ctionnelle/60_Escalier/images/60_02.png, id=65, 330.7557pt x 227.4096pt>
+ctionnelle/60_Escalier/images/60_02.png, id=126, 330.7557pt x 227.4096pt>
 File: ../../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_Chai
 neFonctionnelle/60_Escalier/images/60_02.png Graphic file (type png)
 <use ../../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_Chain
@@ -2158,7 +2215,7 @@ line 43.
 )
 File: ../../Style/png/logo_lycee.png Graphic file (type png)
 <use ../../Style/png/logo_lycee.png>
-Package pdftex.def Info: ../../Style/png/logo_lycee.png  used on input line 77.
+Package pdftex.def Info: ../../Style/png/logo_lycee.png  used on input line 97.
 
 (pdftex.def)             Requested size: 56.9055pt x 45.97325pt.
  [5 <../../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_Chain
@@ -2168,7 +2225,7 @@ images/60_02.png (PNG copy)>]
 (../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_09_DeterminerLoiMouvem
 ent1D/14_Sympact/14_Sympact.tex
 <../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_09_DeterminerLoiMouvem
-ent1D/14_Sympact/images/14_01.png, id=74, 244.0317pt x 109.6095pt>
+ent1D/14_Sympact/images/14_01.png, id=135, 244.0317pt x 109.6095pt>
 File: ../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_09_DeterminerLoiM
 ouvement1D/14_Sympact/images/14_01.png Graphic file (type png)
 <use ../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_09_DeterminerLoiMo
@@ -2180,19 +2237,43 @@ Package pdftex.def Info: ../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C
 LaTeX Font Info:    Font shape `T1/mdput/b/it' will be
 (Font)              scaled to size 9.40002pt on input line 35.
 )
+(../../ExercicesCompetences/B2_ProposerModele/B2_14_ModeliserAction_ModeleGloba
+l/520_MAM/520_MAM.tex
+<../../ExercicesCompetences/B2_ProposerModele/B2_14_ModeliserAction_ModeleGloba
+l/520_MAM/images/520_01.pdf, id=137, 102.75891pt x 78.20015pt>
+File: ../../ExercicesCompetences/B2_ProposerModele/B2_14_ModeliserAction_Modele
+Global/520_MAM/images/520_01.pdf Graphic file (type pdf)
+<use ../../ExercicesCompetences/B2_ProposerModele/B2_14_ModeliserAction_ModeleG
+lobal/520_MAM/images/520_01.pdf>
+Package pdftex.def Info: ../../ExercicesCompetences/B2_ProposerModele/B2_14_Mod
+eliserAction_ModeleGlobal/520_MAM/images/520_01.pdf  used on input line 23.
+(pdftex.def)             Requested size: 236.84843pt x 180.25743pt.
+)
+(../../ExercicesCompetences/B2_ProposerModele/B2_14_ModeliserAction_ModeleGloba
+l/521_MAM/521_MAM.tex
+<../../ExercicesCompetences/B2_ProposerModele/B2_14_ModeliserAction_ModeleGloba
+l/521_MAM/images/521_01.pdf, id=139, 134.30438pt x 96.3488pt>
+File: ../../ExercicesCompetences/B2_ProposerModele/B2_14_ModeliserAction_Modele
+Global/521_MAM/images/521_01.pdf Graphic file (type pdf)
+<use ../../ExercicesCompetences/B2_ProposerModele/B2_14_ModeliserAction_ModeleG
+lobal/521_MAM/images/521_01.pdf>
+Package pdftex.def Info: ../../ExercicesCompetences/B2_ProposerModele/B2_14_Mod
+eliserAction_ModeleGlobal/521_MAM/images/521_01.pdf  used on input line 23.
+(pdftex.def)             Requested size: 236.84843pt x 169.92136pt.
+)
 File: ../../Style/png/logo_lycee.png Graphic file (type png)
 <use ../../Style/png/logo_lycee.png>
-Package pdftex.def Info: ../../Style/png/logo_lycee.png  used on input line 95.
-
+Package pdftex.def Info: ../../Style/png/logo_lycee.png  used on input line 124
+.
 (pdftex.def)             Requested size: 56.9055pt x 45.97325pt.
  [6 <../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_09_DeterminerLoiMo
-uvement1D/14_Sympact/images/14_01.png>]
+uvement1D/14_Sympact/images/14_01.png> <../../ExercicesCompetences/B2_ProposerM
+odele/B2_14_ModeliserAction_ModeleGlobal/520_MAM/images/520_01.pdf> <../../Exer
+cicesCompetences/B2_ProposerModele/B2_14_ModeliserAction_ModeleGlobal/521_MAM/i
+mages/521_01.pdf>]
 (PTSI_Colle_01_ChaineFonctionnelle_Meca_Elec.aux)
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 
 Package biblatex Warning: Please (re)run Biber on the file:
@@ -2204,16 +2285,22 @@ a_Elec.run.xml'.
 \openout1 = `PTSI_Colle_01_ChaineFonctionnelle_Meca_Elec.run.xml'.
 
  )
+(\end occurred when \iffalse on line 17 was incomplete)
+(\end occurred when \iffalse on line 17 was incomplete)
 (\end occurred when \iffalse on line 19 was incomplete)
-(\end occurred when \iffalse on line 19 was incomplete) 
+(\end occurred when \iffalse on line 17 was incomplete)
+(\end occurred when \iffalse on line 17 was incomplete)
+(\end occurred when \iffalse on line 19 was incomplete)
+(\end occurred when \iffalse on line 17 was incomplete)
+(\end occurred when \iffalse on line 17 was incomplete) 
 Here is how much of TeX's memory you used:
- 41234 strings out of 480202
- 803027 string characters out of 2887200
- 1671315 words of memory out of 3000000
- 56775 multiletter control sequences out of 15000+200000
+ 41332 strings out of 480202
+ 809878 string characters out of 2887200
+ 1683453 words of memory out of 3000000
+ 56825 multiletter control sequences out of 15000+200000
  707607 words of font info for 273 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 93i,18n,101p,1170b,1728s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 93i,21n,101p,1170b,1726s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX
  2.9/fonts/enc/dvips/ly1/texnansi.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dv
 ips/base/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/mathdesign/mdput/md-ut
@@ -2227,10 +2314,10 @@ pia/putr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb
 ><C:/Program Files/MiKTeX 2.9/fonts/type1/adobe/utopia/putri8a.pfb><C:/Program 
 Files/MiKTeX 2.9/fonts/type1/urw/avantgar/uagd8a.pfb><C:/Program Files/MiKTeX 2
 .9/fonts/type1/urw/avantgar/uagko8a.pfb>
-Output written on PTSI_Colle_01_ChaineFonctionnelle_Meca_Elec.pdf (6 pages, 285
-8743 bytes).
+Output written on PTSI_Colle_01_ChaineFonctionnelle_Meca_Elec.pdf (6 pages, 103
+77451 bytes).
 PDF statistics:
- 128 PDF objects out of 1000 (max. 8388607)
- 22 named destinations out of 1000 (max. 500000)
- 52814 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 223 PDF objects out of 1000 (max. 8388607)
+ 34 named destinations out of 1000 (max. 500000)
+ 52844 words of extra memory for PDF output out of 61914 (max. 10000000)
 
