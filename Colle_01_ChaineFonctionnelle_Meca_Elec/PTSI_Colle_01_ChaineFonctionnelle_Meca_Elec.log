@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.10.7)  13 SEP 2021 16:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.10.7)  14 SEP 2021 13:24
 entering extended mode
 **./PTSI_Colle_01_ChaineFonctionnelle_Meca_Elec.tex
 (PTSI_Colle_01_ChaineFonctionnelle_Meca_Elec.tex
@@ -2000,16 +2000,33 @@ aineFonctionnelle/58_Oz440/images/58_02.png (PNG copy)>]
 LaTeX Font Info:    Font shape `T1/mdput/m/it' will be
 (Font)              scaled to size 9.40002pt on input line 59.
 )
+(../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_09_DeterminerLoiMouvem
+ent1D/02_R/02_R.tex
+LaTeX Font Info:    Font shape `T1/mdput/m/n' will be
+(Font)              scaled to size 6.58002pt on input line 23.
+LaTeX Font Info:    Font shape `T1/mdput/m/n' will be
+(Font)              scaled to size 4.70001pt on input line 23.
+<../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_09_DeterminerLoiMouvem
+ent1D/02_R/images/02_R_01.png, id=26, 158.7531pt x 89.3739pt>
+File: ../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_09_DeterminerLoiM
+ouvement1D/02_R/images/02_R_01.png Graphic file (type png)
+<use ../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_09_DeterminerLoiMo
+uvement1D/02_R/images/02_R_01.png>
+Package pdftex.def Info: ../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C
+2_09_DeterminerLoiMouvement1D/02_R/images/02_R_01.png  used on input line 30.
+(pdftex.def)             Requested size: 236.84843pt x 133.34181pt.
+)
 File: ../../Style/png/logo_lycee.png Graphic file (type png)
 <use ../../Style/png/logo_lycee.png>
-Package pdftex.def Info: ../../Style/png/logo_lycee.png  used on input line 51.
+Package pdftex.def Info: ../../Style/png/logo_lycee.png  used on input line 58.
 
 (pdftex.def)             Requested size: 56.9055pt x 45.97325pt.
- [2]
+ [2 <../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_09_DeterminerLoiMo
+uvement1D/02_R/images/02_R_01.png>]
 (../../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_ChaineFon
 ctionnelle/59_Levage/59_Levage.tex
 <../../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_ChaineFon
-ctionnelle/59_Levage/images/59_01.png, id=31, 229.3368pt x 179.4705pt>
+ctionnelle/59_Levage/images/59_01.png, id=38, 229.3368pt x 179.4705pt>
 File: ../../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_Chai
 neFonctionnelle/59_Levage/images/59_01.png Graphic file (type png)
 <use ../../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_Chain
@@ -2017,9 +2034,9 @@ eFonctionnelle/59_Levage/images/59_01.png>
 Package pdftex.def Info: ../../ExercicesCompetences/A3_AnalyseFonctionnelleStru
 cturelle/A3_01_ChaineFonctionnelle/59_Levage/images/59_01.png  used on input li
 ne 46.
-(pdftex.def)             Requested size: 236.84843pt x 185.35507pt.
+(pdftex.def)             Requested size: 163.61063pt x 128.0374pt.
 <../../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_ChaineFon
-ctionnelle/59_Levage/images/59_02.png, id=32, 231.7458pt x 154.176pt>
+ctionnelle/59_Levage/images/59_02.png, id=39, 231.7458pt x 154.176pt>
 File: ../../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_Chai
 neFonctionnelle/59_Levage/images/59_02.png Graphic file (type png)
 <use ../../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_Chain
@@ -2027,18 +2044,9 @@ eFonctionnelle/59_Levage/images/59_02.png>
 Package pdftex.def Info: ../../ExercicesCompetences/A3_AnalyseFonctionnelleStru
 cturelle/A3_01_ChaineFonctionnelle/59_Levage/images/59_02.png  used on input li
 ne 52.
-(pdftex.def)             Requested size: 236.84843pt x 157.57735pt.
-File: ../../Style/png/logo_lycee.png Graphic file (type png)
-<use ../../Style/png/logo_lycee.png>
-Package pdftex.def Info: ../../Style/png/logo_lycee.png  used on input line 67.
-
-(pdftex.def)             Requested size: 56.9055pt x 45.97325pt.
- [3 <../../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_Chain
-eFonctionnelle/59_Levage/images/59_01.png (PNG copy)> <../../ExercicesCompetenc
-es/A3_AnalyseFonctionnelleStructurelle/A3_01_ChaineFonctionnelle/59_Levage/imag
-es/59_02.png (PNG copy)>]
+(pdftex.def)             Requested size: 192.45857pt x 128.0374pt.
 <../../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_ChaineFon
-ctionnelle/59_Levage/images/59_03.png, id=41, 129.8451pt x 94.9146pt>
+ctionnelle/59_Levage/images/59_03.png, id=40, 129.8451pt x 94.9146pt>
 File: ../../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_Chai
 neFonctionnelle/59_Levage/images/59_03.png Graphic file (type png)
 <use ../../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_Chain
@@ -2046,9 +2054,9 @@ eFonctionnelle/59_Levage/images/59_03.png>
 Package pdftex.def Info: ../../ExercicesCompetences/A3_AnalyseFonctionnelleStru
 cturelle/A3_01_ChaineFonctionnelle/59_Levage/images/59_03.png  used on input li
 ne 77.
-(pdftex.def)             Requested size: 236.84843pt x 173.13295pt.
+(pdftex.def)             Requested size: 194.63438pt x 142.26378pt.
 <../../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_ChaineFon
-ctionnelle/59_Levage/images/59_04.png, id=42, 85.0377pt x 117.8001pt>
+ctionnelle/59_Levage/images/59_04.png, id=41, 85.0377pt x 117.8001pt>
 File: ../../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_Chai
 neFonctionnelle/59_Levage/images/59_04.png Graphic file (type png)
 <use ../../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_Chain
@@ -2056,21 +2064,79 @@ eFonctionnelle/59_Levage/images/59_04.png>
 Package pdftex.def Info: ../../ExercicesCompetences/A3_AnalyseFonctionnelleStru
 cturelle/A3_01_ChaineFonctionnelle/59_Levage/images/59_04.png  used on input li
 ne 85.
-(pdftex.def)             Requested size: 213.16214pt x 295.30833pt.
+(pdftex.def)             Requested size: 102.69998pt x 142.26378pt.
 )
 File: ../../Style/png/logo_lycee.png Graphic file (type png)
 <use ../../Style/png/logo_lycee.png>
-Package pdftex.def Info: ../../Style/png/logo_lycee.png  used on input line 56.
+Package pdftex.def Info: ../../Style/png/logo_lycee.png  used on input line 64.
 
 (pdftex.def)             Requested size: 56.9055pt x 45.97325pt.
- [4 <../../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_Chain
-eFonctionnelle/59_Levage/images/59_03.png (PNG copy)> <../../ExercicesCompetenc
+ [3 <../../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_Chain
+eFonctionnelle/59_Levage/images/59_01.png (PNG copy)> <../../ExercicesCompetenc
 es/A3_AnalyseFonctionnelleStructurelle/A3_01_ChaineFonctionnelle/59_Levage/imag
-es/59_04.png (PNG copy)>]
+es/59_02.png (PNG copy)> <../../ExercicesCompetences/A3_AnalyseFonctionnelleStr
+ucturelle/A3_01_ChaineFonctionnelle/59_Levage/images/59_03.png (PNG copy)> <../
+../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_ChaineFonctio
+nnelle/59_Levage/images/59_04.png (PNG copy)>]
+(../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_09_DeterminerLoiMouvem
+ent1D/01_T/01_T.tex
+<../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_09_DeterminerLoiMouvem
+ent1D/01_T/images/01_T_01.png, id=53, 88.4103pt x 66.4884pt>
+File: ../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_09_DeterminerLoiM
+ouvement1D/01_T/images/01_T_01.png Graphic file (type png)
+<use ../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_09_DeterminerLoiMo
+uvement1D/01_T/images/01_T_01.png>
+Package pdftex.def Info: ../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C
+2_09_DeterminerLoiMouvement1D/01_T/images/01_T_01.png  used on input line 26.
+(pdftex.def)             Requested size: 142.1105pt x 106.87769pt.
+LaTeX Font Info:    Trying to load font information for TS1+mdput on input line
+ 33.
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/mathdesign/mdput\ts1mdput.fd"
+File: ts1mdput.fd 2013/08/29 Fontinst v1.933 font definitions for TS1/mdput.
+)
+LaTeX Font Info:    Font shape `TS1/mdput/m/n' will be
+(Font)              scaled to size 9.40002pt on input line 33.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `mdput' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 37.
+LaTeX Font Info:    Font shape `T1/mdput/m/n' will be
+(Font)              scaled to size 8.46002pt on input line 38.
+LaTeX Font Info:    Font shape `T1/mdput/b/n' will be
+(Font)              scaled to size 8.46002pt on input line 38.
+LaTeX Font Info:    Font shape `T1/pag/b/n' in size <9> not available
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 38.
+LaTeX Font Info:    Font shape `T1/mdput/m/it' will be
+(Font)              scaled to size 6.58002pt on input line 41.
+LaTeX Font Info:    Font shape `T1/mdput/m/it' will be
+(Font)              scaled to size 4.70001pt on input line 41.
+<../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_09_DeterminerLoiMouvem
+ent1D/01_T/images/fig_12.png, id=54, 559.08875pt x 313.17pt>
+File: ../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_09_DeterminerLoiM
+ouvement1D/01_T/images/fig_12.png Graphic file (type png)
+<use ../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_09_DeterminerLoiMo
+uvement1D/01_T/images/fig_12.png>
+Package pdftex.def Info: ../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C
+2_09_DeterminerLoiMouvement1D/01_T/images/fig_12.png  used on input line 95.
+(pdftex.def)             Requested size: 213.16214pt x 119.40245pt.
+)
+File: ../../Style/png/logo_lycee.png Graphic file (type png)
+<use ../../Style/png/logo_lycee.png>
+Package pdftex.def Info: ../../Style/png/logo_lycee.png  used on input line 71.
+
+(pdftex.def)             Requested size: 56.9055pt x 45.97325pt.
+
+[4 <../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_09_DeterminerLoiMou
+vement1D/01_T/images/01_T_01.png> <../../ExercicesCompetences/C2_MettreEnOeuvre
+Demarche/C2_09_DeterminerLoiMouvement1D/01_T/images/fig_12.png>]
 (../../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_ChaineFon
 ctionnelle/60_Escalier/60_Escalier.tex
 <../../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_ChaineFon
-ctionnelle/60_Escalier/images/60_01.png, id=50, 113.9457pt x 116.8365pt>
+ctionnelle/60_Escalier/images/60_01.png, id=64, 113.9457pt x 116.8365pt>
 File: ../../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_Chai
 neFonctionnelle/60_Escalier/images/60_01.png Graphic file (type png)
 <use ../../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_Chain
@@ -2080,7 +2146,7 @@ cturelle/A3_01_ChaineFonctionnelle/60_Escalier/images/60_01.png  used on input
 line 30.
 (pdftex.def)             Requested size: 113.81102pt x 116.69714pt.
 <../../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_ChaineFon
-ctionnelle/60_Escalier/images/60_02.png, id=51, 330.7557pt x 227.4096pt>
+ctionnelle/60_Escalier/images/60_02.png, id=65, 330.7557pt x 227.4096pt>
 File: ../../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_Chai
 neFonctionnelle/60_Escalier/images/60_02.png Graphic file (type png)
 <use ../../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_Chain
@@ -2092,16 +2158,41 @@ line 43.
 )
 File: ../../Style/png/logo_lycee.png Graphic file (type png)
 <use ../../Style/png/logo_lycee.png>
-Package pdftex.def Info: ../../Style/png/logo_lycee.png  used on input line 72.
+Package pdftex.def Info: ../../Style/png/logo_lycee.png  used on input line 77.
 
 (pdftex.def)             Requested size: 56.9055pt x 45.97325pt.
  [5 <../../ExercicesCompetences/A3_AnalyseFonctionnelleStructurelle/A3_01_Chain
 eFonctionnelle/60_Escalier/images/60_01.png (PNG copy)> <../../ExercicesCompete
 nces/A3_AnalyseFonctionnelleStructurelle/A3_01_ChaineFonctionnelle/60_Escalier/
 images/60_02.png (PNG copy)>]
+(../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_09_DeterminerLoiMouvem
+ent1D/14_Sympact/14_Sympact.tex
+<../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_09_DeterminerLoiMouvem
+ent1D/14_Sympact/images/14_01.png, id=74, 244.0317pt x 109.6095pt>
+File: ../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_09_DeterminerLoiM
+ouvement1D/14_Sympact/images/14_01.png Graphic file (type png)
+<use ../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_09_DeterminerLoiMo
+uvement1D/14_Sympact/images/14_01.png>
+Package pdftex.def Info: ../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C
+2_09_DeterminerLoiMouvement1D/14_Sympact/images/14_01.png  used on input line 2
+6.
+(pdftex.def)             Requested size: 236.84843pt x 106.38963pt.
+LaTeX Font Info:    Font shape `T1/mdput/b/it' will be
+(Font)              scaled to size 9.40002pt on input line 35.
+)
+File: ../../Style/png/logo_lycee.png Graphic file (type png)
+<use ../../Style/png/logo_lycee.png>
+Package pdftex.def Info: ../../Style/png/logo_lycee.png  used on input line 95.
+
+(pdftex.def)             Requested size: 56.9055pt x 45.97325pt.
+ [6 <../../ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_09_DeterminerLoiMo
+uvement1D/14_Sympact/images/14_01.png>]
 (PTSI_Colle_01_ChaineFonctionnelle_Meca_Elec.aux)
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 
 Package biblatex Warning: Please (re)run Biber on the file:
@@ -2114,29 +2205,32 @@ a_Elec.run.xml'.
 
  )
 (\end occurred when \iffalse on line 19 was incomplete)
-(\end occurred when \iffalse on line 19 was incomplete)
 (\end occurred when \iffalse on line 19 was incomplete) 
 Here is how much of TeX's memory you used:
- 40932 strings out of 480202
- 794338 string characters out of 2887200
- 1657202 words of memory out of 3000000
- 56595 multiletter control sequences out of 15000+200000
- 641017 words of font info for 190 fonts, out of 3000000 for 9000
+ 41234 strings out of 480202
+ 803027 string characters out of 2887200
+ 1671315 words of memory out of 3000000
+ 56775 multiletter control sequences out of 15000+200000
+ 707607 words of font info for 273 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 93i,18n,101p,1170b,1726s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 93i,18n,101p,1170b,1728s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX
  2.9/fonts/enc/dvips/ly1/texnansi.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dv
 ips/base/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/mathdesign/mdput/md-ut
-r8t.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/mathdesign/mdput/md-utri7m.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-adobe/utopia/putri8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/avantgar/
-uagd8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/avantgar/uagko8a.pfb>
-Output written on PTSI_Colle_01_ChaineFonctionnelle_Meca_Elec.pdf (5 pages, 261
-1433 bytes).
+r7t.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/mathdesign/mdput/md-utr7v.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/mathdesign/mdput/md-utr7y.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/mathdesign/mdput/md-utr8t.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/mathdesign/mdput/md-utri7m.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/adobe/utopia/putbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/adobe/uto
+pia/putr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/adobe/utopia/putri8a.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/urw/avantgar/uagd8a.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/urw/avantgar/uagko8a.pfb>
+Output written on PTSI_Colle_01_ChaineFonctionnelle_Meca_Elec.pdf (6 pages, 285
+8743 bytes).
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
- 17 named destinations out of 1000 (max. 500000)
- 44602 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 128 PDF objects out of 1000 (max. 8388607)
+ 22 named destinations out of 1000 (max. 500000)
+ 52814 words of extra memory for PDF output out of 61914 (max. 10000000)
 
