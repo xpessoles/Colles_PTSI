@@ -1,0 +1,230 @@
+\documentclass[10pt,fleqn]{article} % Default font size and left-justified equations
+\usepackage[%
+    pdftitle={Exercices de SII},
+    pdfauthor={Xavier Pessoles}]{hyperref}
+
+\newcommand{\repRel}{../..}
+\input{\repRel/Style/packages}
+\input{\repRel/Style/new_style}
+\input{\repRel/Style/macros_SII}
+\input{\repRel/Style/environment}
+\usepackage{\repRel/Style/UPSTI_pedagogique}
+
+
+\newcommand{\macrocomp}{macro_competences}
+\newcommand{\comp}{competences}
+\newcommand{\td}{fichier_td}
+\newcommand{\repExo}{dossier}
+\newcommand{\repStyle}{\repRel/Style}
+
+\def\xxYCartouche{-2.25cm}
+\def\xxYongletGarde{.5cm}
+\def\xxYOnget{.9cm}
+
+\def\xxposongletx{-2.25cm}
+\def\xxposonglety{-2.25cm}
+\def\xxposonglettext{-2.25cm}
+\def\bleuxp{ocre}
+
+\def\xxnumchapitre{}
+\def\xxchapitre{Fermeture géométrique}
+\def\xxtitreexo{Fermeture géométrique}
+\def\xxsourceexo{}
+\def\xxactivite{Colle 01}
+\def\xxpartie{Exercices de colles}
+\def\xxnumpartie{Loi ES}
+\def\discipline{Sciences \\Industrielles de \\ l'Ingénieur}
+\def\classe{\textsf{PTSI}}
+\def\xxauteur{\textsl{Xavier Pessoles}}
+
+\def\xxtete{Sciences Industrielles de l'Ingénieur}
+
+\def\xxpied{%
+\xxpartie\\
+\xxchapitre%
+}
+\begin{document}
+
+\def\xxcompetences{}
+\def\xxfigures{}
+
+
+\setlength{\columnseprule}{.1pt}
+
+
+\newcommand{\chemin}{522_RdM}
+
+\colletrue
+%% COLLE 1
+\livrettrue\def\xxactivite{Colle 01}
+\proffalse
+\newpage
+\input{\repStyle/pagegarde_TD}
+\vspace{4cm}
+\pagestyle{fancy}
+\thispagestyle{plain}
+
+
+
+\begin{multicols}{2}
+
+\renewcommand{\repExo}{../../ExercicesCompetences/B2_ProposerModele/B2_13_PTSI_PT_Parametrage}
+\renewcommand{\td}{12_BielleManivelle}
+\graphicspath{{\repStyle/png/}{\repExo/\td/images/}}
+\input{\repExo/\td/\td.tex}
+
+
+\renewcommand{\chemin}{ExercicesCompetences/B2_ProposerModele/B2_12_ModeliserSchemasCinematiques}
+\renewcommand{\repExo}{10_PompePalette}
+\graphicspath{{\repRel/Style/png/}{\repRel/\chemin/\repExo/images/}}
+\input{\repRel/\chemin/\repExo/\repExo.tex}
+
+\renewcommand{\chemin}{ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_06_DeterminerLoisES}
+\renewcommand{\repExo}{10_PompePalette}
+\graphicspath{{\repRel/Style/png/}{\repRel/\chemin/\repExo/images/}}
+\input{\repRel/\chemin/\repExo/\repExo.tex}
+
+\end{multicols}
+
+
+
+%% COLLE 2
+\livrettrue\def\xxactivite{Colle 02}
+\newpage
+\input{\repStyle/pagegarde_TD}
+\vspace{4cm}
+\pagestyle{fancy}
+\thispagestyle{plain}
+
+\begin{multicols}{2}
+
+\renewcommand{\repExo}{../../ExercicesCompetences/B2_ProposerModele/B2_13_PTSI_PT_Parametrage}
+\renewcommand{\td}{10_PompePalette}
+\graphicspath{{\repStyle/png/}{\repExo/\td/images/}}
+\input{\repExo/\td/\td.tex}
+
+\renewcommand{\repExo}{11_PompePistonsRadiaux}
+\renewcommand{\chemin}{ExercicesCompetences/B2_ProposerModele/B2_12_ModeliserSchemasCinematiques}
+\graphicspath{{\repRel/Style/png/}{\repRel/\chemin/\repExo/images/}}
+\input{\repRel/\chemin/\repExo/\repExo.tex}
+
+\renewcommand{\chemin}{ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_06_DeterminerLoisES}
+\graphicspath{{\repRel/Style/png/}{\repRel/\chemin/\repExo/images/}}
+\input{\repRel/\chemin/\repExo/\repExo.tex}
+
+\end{multicols}
+
+
+
+
+%% COLLE 3
+\livrettrue\def\xxactivite{Colle 03}
+\newpage
+\input{\repStyle/pagegarde_TD}
+\vspace{4cm}
+\pagestyle{fancy}
+\thispagestyle{plain}
+
+\begin{multicols}{2}
+
+\renewcommand{\repExo}{../../ExercicesCompetences/B2_ProposerModele/B2_13_PTSI_PT_Parametrage}
+\renewcommand{\td}{13_TransfoMouvement}
+\graphicspath{{\repStyle/png/}{\repExo/\td/images/}}
+\input{\repExo/\td/\td.tex}
+
+\renewcommand{\repExo}{12_BielleManivelle}
+\renewcommand{\chemin}{ExercicesCompetences/B2_ProposerModele/B2_12_ModeliserSchemasCinematiques}
+\graphicspath{{\repRel/Style/png/}{\repRel/\chemin/\repExo/images/}}
+\input{\repRel/\chemin/\repExo/\repExo.tex}
+
+\renewcommand{\chemin}{ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_06_DeterminerLoisES}
+\graphicspath{{\repRel/Style/png/}{\repRel/\chemin/\repExo/images/}}
+\input{\repRel/\chemin/\repExo/\repExo.tex}
+
+\end{multicols}
+
+
+
+%% COLLE 4
+\livrettrue\def\xxactivite{Colle 04}
+\newpage
+\input{\repStyle/pagegarde_TD}
+\vspace{4cm}
+\pagestyle{fancy}
+\thispagestyle{plain}
+
+\begin{multicols}{2}
+
+
+\renewcommand{\repExo}{../../ExercicesCompetences/B2_ProposerModele/B2_13_PTSI_PT_Parametrage}
+\renewcommand{\td}{11_PompePistonsRadiaux}
+\graphicspath{{\repStyle/png/}{\repExo/\td/images/}}
+\input{\repExo/\td/\td.tex}
+
+
+\renewcommand{\repExo}{13_TransfoMouvement}
+\renewcommand{\chemin}{ExercicesCompetences/B2_ProposerModele/B2_12_ModeliserSchemasCinematiques}
+\graphicspath{{\repRel/Style/png/}{\repRel/\chemin/\repExo/images/}}
+\input{\repRel/\chemin/\repExo/\repExo.tex}
+
+\renewcommand{\chemin}{ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_06_DeterminerLoisES}
+\graphicspath{{\repRel/Style/png/}{\repRel/\chemin/\repExo/images/}}
+\input{\repRel/\chemin/\repExo/\repExo.tex}
+
+\renewcommand{\chemin}{ExercicesCompetences/B2_ProposerModele/B2_13_ModeliserCinematique}
+\graphicspath{{\repRel/Style/png/}{\repRel/\chemin/\repExo/images/}}
+\input{\repRel/\chemin/\repExo/\repExo.tex}
+\end{multicols}
+
+\end{document}
+%% COLLE 5
+\livrettrue\def\xxactivite{Colle 05}
+\newpage
+\input{\repStyle/pagegarde_TD}
+\vspace{4cm}
+\pagestyle{fancy}
+\thispagestyle{plain}
+
+\begin{multicols}{2}
+\renewcommand{\repExo}{14_Sympact}
+\renewcommand{\chemin}{ExercicesCompetences/B2_ProposerModele/B2_12_ModeliserSchemasCinematiques}
+\graphicspath{{\repRel/Style/png/}{\repRel/\chemin/\repExo/images/}}
+\input{\repRel/\chemin/\repExo/\repExo.tex}
+
+\renewcommand{\chemin}{ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_06_DeterminerLoisES}
+\graphicspath{{\repRel/Style/png/}{\repRel/\chemin/\repExo/images/}}
+\input{\repRel/\chemin/\repExo/\repExo.tex}
+
+\renewcommand{\chemin}{ExercicesCompetences/B2_ProposerModele/B2_13_ModeliserCinematique}
+\graphicspath{{\repRel/Style/png/}{\repRel/\chemin/\repExo/images/}}
+\input{\repRel/\chemin/\repExo/\repExo.tex}
+\end{multicols}
+
+%% COLLE 6
+\livrettrue\def\xxactivite{Colle 06}
+\newpage
+\input{\repStyle/pagegarde_TD}
+\vspace{4cm}
+\pagestyle{fancy}
+\thispagestyle{plain}
+
+\begin{multicols}{2}
+\renewcommand{\repExo}{17_4Barres}
+\renewcommand{\chemin}{ExercicesCompetences/B2_ProposerModele/B2_12_ModeliserSchemasCinematiques}
+\graphicspath{{\repRel/Style/png/}{\repRel/\chemin/\repExo/images/}}
+\input{\repRel/\chemin/\repExo/\repExo.tex}
+
+\renewcommand{\chemin}{ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_06_DeterminerLoisES}
+\graphicspath{{\repRel/Style/png/}{\repRel/\chemin/\repExo/images/}}
+\input{\repRel/\chemin/\repExo/\repExo.tex}
+
+\renewcommand{\chemin}{ExercicesCompetences/B2_ProposerModele/B2_13_ModeliserCinematique}
+\graphicspath{{\repRel/Style/png/}{\repRel/\chemin/\repExo/images/}}
+\input{\repRel/\chemin/\repExo/\repExo.tex}
+\end{multicols}
+
+
+\end{document}
+
+
+
